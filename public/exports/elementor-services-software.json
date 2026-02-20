@@ -1,0 +1,251 @@
+{
+  "version": "1.0.0",
+  "title": "Zemnas - Software & AI Services Export",
+  "pages": {
+    "software_main": {
+      "title": "Software & AI - Zemnas",
+      "url": "/services/software",
+      "sections": [
+        {
+          "type": "hero",
+          "content": {
+            "badge": "Software & AI Solutions",
+            "headline": "Technology that actually solves problems.",
+            "subheadline": "Custom software, AI integration, workflow automation, and intelligent systems designed for your specific needs."
+          }
+        },
+        {
+          "type": "philosophy",
+          "content": {
+            "lines": [
+              "We don't build technology for its own sake.",
+              "Every solution starts with a real problem and ends with measurable impact.",
+              "AI is a tool, not a trend—we implement it where it creates genuine value."
+            ]
+          }
+        },
+        {
+          "type": "modules",
+          "content": {
+            "modules": [
+              {
+                "icon": "Code2",
+                "title": "Custom Development",
+                "description": "Bespoke software solutions built for your unique requirements.",
+                "image": "src/assets/work/ai-platform.jpg",
+                "link": "/services/software/custom-development"
+              },
+              {
+                "icon": "Brain",
+                "title": "AI-Powered Tools",
+                "description": "Machine learning and AI solutions that automate and enhance operations.",
+                "image": "src/assets/work/marketing-dashboard.jpg",
+                "link": "/services/software/ai-powered-tools"
+              },
+              {
+                "icon": "Workflow",
+                "title": "Workflow Automation",
+                "description": "Eliminate manual processes with intelligent automation.",
+                "image": "src/assets/work/ecommerce-platform.jpg",
+                "link": "/services/software/workflow-automation"
+              },
+              {
+                "icon": "Link",
+                "title": "Integration & APIs",
+                "description": "Connect your systems for seamless data flow.",
+                "image": "src/assets/work/managed-services.jpg",
+                "link": "/services/software/integration-apis"
+              }
+            ]
+          }
+        },
+        {
+          "type": "timeline",
+          "content": {
+            "headline": "How we build",
+            "steps": [
+              {"label": "Discovery", "description": "Understanding your needs and constraints."},
+              {"label": "Architecture", "description": "Designing scalable, maintainable solutions."},
+              {"label": "Development", "description": "Building with best practices and testing."},
+              {"label": "Deployment", "description": "Smooth launch with monitoring."},
+              {"label": "Iteration", "description": "Continuous improvement based on usage."}
+            ]
+          }
+        },
+        {
+          "type": "bridge_section",
+          "content": {
+            "headline": "Where software connects to everything else",
+            "description": "Technology works best when it's connected to marketing, operations, and creative. We build systems that integrate across your business.",
+            "links": [
+              {"text": "Digital Marketing & Growth", "url": "/services/marketing"},
+              {"text": "Managed Services", "url": "/services/managed"}
+            ]
+          }
+        },
+        {
+          "type": "use_cases",
+          "content": {
+            "headline": "Recent projects",
+            "items": [
+              {"title": "AI Document Processing", "description": "Automated extraction and processing of complex documents.", "image": "src/assets/work/ai-platform.jpg"},
+              {"title": "Customer Data Platform", "description": "Unified view of customer interactions across channels.", "image": "src/assets/work/marketing-dashboard.jpg"},
+              {"title": "Workflow Automation Suite", "description": "End-to-end automation for operations team.", "image": "src/assets/work/ecommerce-platform.jpg"}
+            ]
+          }
+        },
+        {
+          "type": "closing",
+          "content": {
+            "headline": "Let's design technology that actually fits your team.",
+            "subheadline": "We're happy to explore ideas, constraints, and possibilities together.",
+            "cta": {"text": "Start a conversation", "link": "/contact"}
+          }
+        }
+      ]
+    },
+    "sub_pages": {
+      "custom_development": {
+        "title": "Custom Development - Software & AI",
+        "url": "/services/software/custom-development",
+        "hero": {
+          "headline": "Software built exactly for you.",
+          "subheadline": "Custom applications designed around your workflows, not the other way around."
+        },
+        "features": [
+          {"icon": "Layers", "title": "Scalable Architecture", "description": "Built to grow with your business without breaking."},
+          {"icon": "Shield", "title": "Security First", "description": "Enterprise-grade security built into every layer."},
+          {"icon": "Smartphone", "title": "Modern Stack", "description": "Latest technologies for performance and maintainability."},
+          {"icon": "Users", "title": "User-Centered", "description": "Designed for the people who use it every day."}
+        ],
+        "case_study": {
+          "client": "Healthcare Provider",
+          "challenge": "Legacy patient management system causing inefficiencies and errors.",
+          "solution": "Custom EHR integration platform with modern UI and automated workflows.",
+          "results": [
+            {"metric": "-60%", "label": "Admin time reduced"},
+            {"metric": "99.9%", "label": "Uptime achieved"},
+            {"metric": "4.8/5", "label": "Staff satisfaction"}
+          ],
+          "testimonial": {
+            "quote": "The new system transformed how our team works. What used to take hours now takes minutes.",
+            "author": "Operations Director"
+          }
+        },
+        "process": [
+          {"step": 1, "title": "Discovery", "description": "Deep understanding of your requirements."},
+          {"step": 2, "title": "Architecture", "description": "Designing for scale and maintainability."},
+          {"step": 3, "title": "Development", "description": "Agile sprints with regular demos."},
+          {"step": 4, "title": "Deployment", "description": "Smooth rollout with training."}
+        ]
+      },
+      "ai_powered_tools": {
+        "title": "AI-Powered Tools - Software & AI",
+        "url": "/services/software/ai-powered-tools",
+        "hero": {
+          "headline": "AI that actually delivers value.",
+          "subheadline": "Machine learning and AI solutions designed for real business impact, not hype."
+        },
+        "features": [
+          {"icon": "Brain", "title": "Machine Learning Integration", "description": "Custom ML models trained on your data for specific use cases."},
+          {"icon": "Wand2", "title": "Generative AI", "description": "LLMs and generative models for content, analysis, and automation."},
+          {"icon": "TrendingUp", "title": "Predictive Analytics", "description": "Forecast trends and make data-driven decisions."},
+          {"icon": "Eye", "title": "Computer Vision", "description": "Image and video analysis for quality control and more."}
+        ],
+        "use_cases": [
+          {"title": "Document Intelligence", "description": "Automated extraction and processing of complex documents."},
+          {"title": "Customer Insights", "description": "Predictive models for churn, LTV, and behavior."},
+          {"title": "Content Generation", "description": "AI-assisted content creation and optimization."},
+          {"title": "Process Optimization", "description": "ML-driven improvements to operations."}
+        ],
+        "case_study": {
+          "client": "Insurance Company",
+          "challenge": "Manual document processing taking 20+ hours per week.",
+          "solution": "AI-powered document extraction with 95% accuracy.",
+          "results": [
+            {"metric": "-85%", "label": "Processing time"},
+            {"metric": "95%", "label": "Accuracy rate"},
+            {"metric": "$200K", "label": "Annual savings"}
+          ]
+        },
+        "ai_capabilities": {
+          "transform_with_ai_nlp": {
+            "title": "Transform with AI & NLP",
+            "description": "Natural language processing for text analysis, sentiment detection, and intelligent document understanding.",
+            "capabilities": ["Text Classification", "Named Entity Recognition", "Sentiment Analysis", "Document Summarization"]
+          },
+          "data_ai_solutions": {
+            "title": "Data & AI Solutions",
+            "description": "End-to-end data solutions from collection to insights, powered by machine learning.",
+            "capabilities": ["Data Pipeline Architecture", "ML Model Development", "Real-time Analytics", "Predictive Modeling"]
+          },
+          "generative_ai": {
+            "title": "Generative AI",
+            "description": "Leverage LLMs and generative models for content creation, code generation, and intelligent assistants.",
+            "capabilities": ["Custom GPT Integrations", "Content Generation", "Code Assistants", "Chatbots & Virtual Agents"]
+          }
+        }
+      },
+      "workflow_automation": {
+        "title": "Workflow Automation - Software & AI",
+        "url": "/services/software/workflow-automation",
+        "hero": {
+          "headline": "Stop doing manually what machines can do better.",
+          "subheadline": "Intelligent automation that eliminates bottlenecks and reduces errors."
+        },
+        "features": [
+          {"icon": "Workflow", "title": "Process Mapping", "description": "Identifying automation opportunities in your workflows."},
+          {"icon": "Zap", "title": "Integration Automation", "description": "Connecting systems for seamless data flow."},
+          {"icon": "Bell", "title": "Alert Systems", "description": "Automated notifications and escalations."},
+          {"icon": "RefreshCw", "title": "Scheduled Tasks", "description": "Reliable execution of recurring processes."}
+        ],
+        "examples": [
+          {"before": "Manual data entry from forms", "after": "Automatic capture and CRM sync"},
+          {"before": "Weekly report compilation", "after": "Automated dashboard updates"},
+          {"before": "Invoice processing by hand", "after": "AI extraction and approval workflow"},
+          {"before": "Customer onboarding emails", "after": "Triggered sequences with personalization"}
+        ],
+        "case_study": {
+          "client": "Professional Services Firm",
+          "challenge": "Manual onboarding taking 8 hours per new client.",
+          "solution": "Automated onboarding workflow with document collection and system provisioning.",
+          "results": [
+            {"metric": "-90%", "label": "Onboarding time"},
+            {"metric": "0", "label": "Errors"},
+            {"metric": "$150K", "label": "Annual savings"}
+          ]
+        }
+      },
+      "integration_apis": {
+        "title": "Integration & APIs - Software & AI",
+        "url": "/services/software/integration-apis",
+        "hero": {
+          "headline": "Connect everything, seamlessly.",
+          "subheadline": "API development and system integrations that unify your tech stack."
+        },
+        "features": [
+          {"icon": "Link", "title": "API Development", "description": "Custom APIs that expose your data and functionality."},
+          {"icon": "GitMerge", "title": "System Integration", "description": "Connecting disparate systems into a unified whole."},
+          {"icon": "Database", "title": "Data Sync", "description": "Real-time data synchronization across platforms."},
+          {"icon": "Shield", "title": "Secure Connections", "description": "Enterprise-grade security for all integrations."}
+        ],
+        "integration_types": [
+          {"title": "CRM Integrations", "description": "Salesforce, HubSpot, Pipedrive, and custom CRMs.", "icon": "Users"},
+          {"title": "Payment Systems", "description": "Stripe, PayPal, and custom payment solutions.", "icon": "CreditCard"},
+          {"title": "ERPs", "description": "NetSuite, SAP, and enterprise systems.", "icon": "Building"},
+          {"title": "Communication Tools", "description": "Slack, Teams, email, and messaging platforms.", "icon": "MessageSquare"}
+        ],
+        "case_study": {
+          "client": "E-commerce Company",
+          "challenge": "Manual order processing between 5 different systems.",
+          "solution": "Unified integration layer connecting all platforms.",
+          "results": [
+            {"metric": "100%", "label": "Automation"},
+            {"metric": "-4hrs", "label": "Daily savings"},
+            {"metric": "0", "label": "Sync errors"}
+          ]
+        }
+      }
+    }
+  }
+}

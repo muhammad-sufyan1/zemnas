@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<!--
+===============================================================================
+ZEMNAS - Complete Animations Library for WordPress Elementor
+===============================================================================
+This file contains all HTML/CSS/JS snippets you need to recreate the Zemnas
+website animations in Elementor's HTML Widget.
+
+INSTRUCTIONS:
+1. Copy the specific animation section you need
+2. Paste into Elementor > Add Widget > HTML
+3. Adjust colors, sizes, and content as needed
+4. Each section is self-contained with its own CSS and JS
+
+TABLE OF CONTENTS:
+1. CSS Variables & Design Tokens
+2. Canvas Dot Animation (Hero backgrounds)
+3. Scroll-Triggered Animations
+4. Infinite Marquee/Ticker
+5. Floating Cards Animation
+6. Testimonial Carousel
+7. Portfolio Filter & Modal
+8. Stats Counter Animation
+9. Process Timeline Animation
+10. Gradient Text Effects
+11. Grain/Noise Texture Overlay
+12. Glassmorphism Cards
+13. Hover Lift Effects
+14. Staggered Fade-Up Lists
+15. Animated Blur Orbs
+===============================================================================
+-->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Zemnas Animations for Elementor</title>
+</head>
+<body>
+
+<!-- ========================================================================
+     1. CSS VARIABLES & DESIGN TOKENS
+     Copy this to your theme's Additional CSS or a Custom CSS widget
+========================================================================= -->
+<style id="zemnas-design-tokens">
+:root {
+  /* Colors - Light Mode */
+  --z-background: #fafbfc;
+  --z-foreground: #0f1419;
+  --z-card: #ffffff;
+  --z-primary: #1a6dcc;
+  --z-primary-glow: #4d93e0;
+  --z-secondary: #f1f4f9;
+  --z-muted: #e8ecf1;
+  --z-muted-foreground: #687076;
+  --z-accent: #1a6dcc;
+  --z-border: #dde2e8;
+  
+  /* Typography */
+  --z-font-display: 'Playfair Display', Georgia, serif;
+  --z-font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+  
+  /* Shadows */
+  --z-shadow-sm: 0 1px 2px rgba(15, 20, 25, 0.04), 0 1px 3px rgba(15, 20, 25, 0.06);
+  --z-shadow-md: 0 4px 6px rgba(15, 20, 25, 0.04), 0 2px 4px rgba(15, 20, 25, 0.06);
+  --z-shadow-lg: 0 10px 25px rgba(15, 20, 25, 0.06), 0 4px 10px rgba(15, 20, 25, 0.04);
+  --z-shadow-glow: 0 0 30px rgba(26, 109, 204, 0.15);
+  
+  /* Transitions */
+  --z-transition-fast: 0.2s ease-out;
+  --z-transition-medium: 0.3s ease-out;
+  --z-transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode Override */
+body.dark-mode {
+  --z-background: #0a0d11;
+  --z-foreground: #f1f4f9;
+  --z-card: #11151b;
+  --z-primary: #4d93e0;
+  --z-secondary: #1a1f28;
+  --z-muted: #222832;
+  --z-muted-foreground: #8490a0;
+  --z-border: #252c38;
+}
+</style>
+
+
+<!-- ========================================================================
+     2. CANVAS DOT ANIMATION (Hero Backgrounds)
+     Creates animated dots with connecting lines - used on all hero sections
+========================================================================= -->
+<div id="canvas-dot-animation-example">
+<style>
+.z-canvas-hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--z-background, #fafbfc);
+}
+
+.z-canvas-hero canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.z-canvas-hero canvas.visible {
+  opacity: 0.5;
+}
+
+.z-canvas-hero .content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 896px;
+  padding: 0 1.5rem;
+}
+
+.z-canvas-hero h1 {
+  font-family: var(--z-font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--z-foreground);
+  margin: 0;
+}
+
+.z-canvas-hero h1 span {
+  color: var(--z-muted-foreground);
+}
+
+.z-canvas-hero p {
+  font-family: var(--z-font-body);
+  font-size: 1.25rem;
+  color: var(--z-muted-foreground);
+  margin-top: 2rem;
+  line-height: 1.6;
+}
+</style>
+
+<section class="z-canvas-hero">
+  <canvas id="dotCanvas"></canvas>
+  <div class="content">
+    <h1>Your headline here <span>with accent text.</span></h1>
+    <p>Your subtitle goes here with supporting text that explains the value proposition.</p>
+  </div>
+</section>
+
+<script>
+(function() {
+  const canvas = document.getElementById('dotCanvas');
+  if (!canvas) return;
+  
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+
+  // Make canvas visible after delay
+  setTimeout(() => canvas.classList.add('visible'), 100);
+
+  function resize() {
+    canvas.width = canvas.offsetWidth * 2;
+    canvas.height = canvas.offsetHeight * 2;
+    ctx.scale(2, 2);
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const width = canvas.offsetWidth;
+  const height = canvas.offsetHeight;
+
+  // Create dots
+  const dots = [];
+  const dotCount = 20;
+  
+  for (let i = 0; i < dotCount; i++) {
+    dots.push({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      radius: 4 + Math.random() * 6,
+      opacity: 0.3 + Math.random() * 0.3,
+      pulseSpeed: 0.02 + Math.random() * 0.02,
+      pulsePhase: Math.random() * Math.PI * 2
+    });
+  }
+
+  let time = 0;
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+    time += 0.01;
+
+    // Draw connections
+    dots.forEach((dot, i) => {
+      dots.forEach((other, j) => {
+        if (i >= j) return;
+        const dx = other.x - dot.x;
+        const dy = other.y - dot.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+
+        if (dist < 180) {
+          const opacity = (1 - dist / 180) * 0.12;
+          ctx.beginPath();
+          ctx.moveTo(dot.x, dot.y);
+          ctx.lineTo(other.x, other.y);
+          ctx.strokeStyle = `hsla(215, 90%, 50%, ${opacity})`;
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        }
+      });
+    });
+
+    // Draw dots with pulsing
+    dots.forEach((dot) => {
+      const pulse = Math.sin(time * dot.pulseSpeed * 50 + dot.pulsePhase) * 0.2 + 1;
+      ctx.beginPath();
+      ctx.arc(dot.x, dot.y, dot.radius * pulse, 0, Math.PI * 2);
+      ctx.fillStyle = `hsla(215, 90%, 55%, ${dot.opacity * pulse})`;
+      ctx.fill();
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+})();
+</script>
+</div>
+
+
+<!-- ========================================================================
+     3. SCROLL-TRIGGERED ANIMATIONS
+     Elements animate in when they scroll into view
+========================================================================= -->
+<div id="scroll-animation-example">
+<style>
+.z-animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.z-animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for lists */
+.z-stagger-1 { transition-delay: 0.1s; }
+.z-stagger-2 { transition-delay: 0.2s; }
+.z-stagger-3 { transition-delay: 0.3s; }
+.z-stagger-4 { transition-delay: 0.4s; }
+.z-stagger-5 { transition-delay: 0.5s; }
+.z-stagger-6 { transition-delay: 0.6s; }
+
+/* Slide from left */
+.z-animate-slide-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.z-animate-slide-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide from right */
+.z-animate-slide-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.z-animate-slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Scale in */
+.z-animate-scale {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.z-animate-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+</style>
+
+<div class="z-animate-on-scroll">
+  <h2>This animates when scrolled into view</h2>
+</div>
+
+<div class="z-animate-on-scroll z-stagger-1">Item 1</div>
+<div class="z-animate-on-scroll z-stagger-2">Item 2</div>
+<div class="z-animate-on-scroll z-stagger-3">Item 3</div>
+
+<script>
+(function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '-50px' });
+
+  document.querySelectorAll('.z-animate-on-scroll, .z-animate-slide-left, .z-animate-slide-right, .z-animate-scale').forEach(el => {
+    observer.observe(el);
+  });
+})();
+</script>
+</div>
+
+
+<!-- ========================================================================
+     4. INFINITE MARQUEE/TICKER
+     Used for capability strips and client logos
+========================================================================= -->
+<div id="marquee-example">
+<style>
+.z-marquee-container {
+  overflow: hidden;
+  background: var(--z-foreground, #0f1419);
+  padding: 1rem 0;
+}
+
+.z-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.z-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.z-marquee-item {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  font-family: var(--z-font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+.z-marquee-item::before {
+  content: '•';
+  margin-right: 2rem;
+  opacity: 0.5;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Reverse direction variant */
+.z-marquee-track.reverse {
+  animation-direction: reverse;
+}
+</style>
+
+<div class="z-marquee-container">
+  <div class="z-marquee-track">
+    <!-- Items duplicated for seamless loop -->
+    <span class="z-marquee-item">Explainer Videos</span>
+    <span class="z-marquee-item">Brand Identity</span>
+    <span class="z-marquee-item">Motion Graphics</span>
+    <span class="z-marquee-item">UI/UX Design</span>
+    <span class="z-marquee-item">Demand Generation</span>
+    <span class="z-marquee-item">Marketing Funnels</span>
+    <span class="z-marquee-item">Custom Software</span>
+    <span class="z-marquee-item">AI Integration</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="z-marquee-item">Explainer Videos</span>
+    <span class="z-marquee-item">Brand Identity</span>
+    <span class="z-marquee-item">Motion Graphics</span>
+    <span class="z-marquee-item">UI/UX Design</span>
+    <span class="z-marquee-item">Demand Generation</span>
+    <span class="z-marquee-item">Marketing Funnels</span>
+    <span class="z-marquee-item">Custom Software</span>
+    <span class="z-marquee-item">AI Integration</span>
+  </div>
+</div>
+</div>
+
+
+<!-- ========================================================================
+     5. FLOATING CARDS ANIMATION
+     Used in hero visual sections
+========================================================================= -->
+<div id="floating-cards-example">
+<style>
+.z-floating-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
+
+.z-floating-card {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(221, 226, 232, 0.5);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: var(--z-shadow-md);
+}
+
+.z-floating-card-1 {
+  top: 10%;
+  left: 5%;
+  animation: float1 5s ease-in-out infinite;
+}
+
+.z-floating-card-2 {
+  top: 20%;
+  right: 5%;
+  animation: float2 6s ease-in-out infinite;
+}
+
+.z-floating-card-3 {
+  bottom: 25%;
+  left: 10%;
+  animation: float3 7s ease-in-out infinite;
+}
+
+.z-floating-card-4 {
+  bottom: 10%;
+  right: 10%;
+  animation: float4 5.5s ease-in-out infinite;
+}
+
+@keyframes float1 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes float3 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes float4 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.z-floating-card h4 {
+  font-family: var(--z-font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--z-foreground);
+}
+
+.z-floating-card p {
+  font-size: 0.75rem;
+  color: var(--z-muted-foreground);
+  margin: 0.25rem 0 0;
+}
+</style>
+
+<div class="z-floating-container">
+  <div class="z-floating-card z-floating-card-1">
+    <h4>Creative Studio</h4>
+    <p>Design & Production</p>
+  </div>
+  <div class="z-floating-card z-floating-card-2">
+    <h4>Marketing</h4>
+    <p>Growth & Demand</p>
+  </div>
+  <div class="z-floating-card z-floating-card-3">
+    <h4>Software & AI</h4>
+    <p>Build & Automate</p>
+  </div>
+  <div class="z-floating-card z-floating-card-4">
+    <h4>Managed</h4>
+    <p>Always-on</p>
+  </div>
+</div>
+</div>
+
+
+<!-- ========================================================================
+     6. TESTIMONIAL CAROUSEL
+     Auto-playing testimonial slider with navigation
+========================================================================= -->
+<div id="testimonial-carousel-example">
+<style>
+.z-testimonial-carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--z-card, white);
+  border: 1px solid var(--z-border);
+  border-radius: 1rem;
+}
+
+.z-testimonial-quote-icon {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 40px;
+  height: 40px;
+  color: rgba(26, 109, 204, 0.1);
+}
+
+.z-testimonial-slides {
+  position: relative;
+  min-height: 200px;
+  overflow: hidden;
+}
+
+.z-testimonial-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+
+.z-testimonial-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.z-testimonial-slide.prev {
+  transform: translateX(-20px);
+}
+
+.z-testimonial-quote {
+  font-family: var(--z-font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--z-foreground);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.z-testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.z-testimonial-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(26, 109, 204, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: var(--z-primary);
+  border: 2px solid rgba(26, 109, 204, 0.2);
+}
+
+.z-testimonial-name {
+  font-weight: 600;
+  color: var(--z-foreground);
+}
+
+.z-testimonial-role {
+  font-size: 0.875rem;
+  color: var(--z-muted-foreground);
+}
+
+.z-testimonial-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--z-border);
+}
+
+.z-testimonial-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.z-testimonial-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(104, 112, 118, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.z-testimonial-dot.active {
+  width: 32px;
+  border-radius: 5px;
+  background: var(--z-primary);
+}
+
+.z-testimonial-arrows {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.z-testimonial-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--z-border);
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.z-testimonial-arrow:hover {
+  background: rgba(241, 244, 249, 0.5);
+}
+</style>
+
+<div class="z-testimonial-carousel" id="testimonialCarousel">
+  <svg class="z-testimonial-quote-icon" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+  </svg>
+  
+  <div class="z-testimonial-slides">
+    <div class="z-testimonial-slide active">
+      <p class="z-testimonial-quote">"Zemnas transformed our digital presence. Their strategic approach and attention to detail exceeded our expectations."</p>
+      <div class="z-testimonial-author">
+        <div class="z-testimonial-avatar">SC</div>
+        <div>
+          <div class="z-testimonial-name">Sarah Chen</div>
+          <div class="z-testimonial-role">CEO, TechVentures</div>
+        </div>
+      </div>
+    </div>
+    <div class="z-testimonial-slide">
+      <p class="z-testimonial-quote">"Working with Zemnas felt like having an in-house team. They understood our vision and delivered beyond what we imagined."</p>
+      <div class="z-testimonial-author">
+        <div class="z-testimonial-avatar">MJ</div>
+        <div>
+          <div class="z-testimonial-name">Marcus Johnson</div>
+          <div class="z-testimonial-role">Founder, GrowthLab</div>
+        </div>
+      </div>
+    </div>
+    <div class="z-testimonial-slide">
+      <p class="z-testimonial-quote">"The AI integration they built saved us 40 hours a week. The ROI was immediate and continues to grow."</p>
+      <div class="z-testimonial-author">
+        <div class="z-testimonial-avatar">ER</div>
+        <div>
+          <div class="z-testimonial-name">Elena Rodriguez</div>
+          <div class="z-testimonial-role">COO, DataFlow Inc</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="z-testimonial-nav">
+    <div class="z-testimonial-dots">
+      <button class="z-testimonial-dot active" data-index="0"></button>
+      <button class="z-testimonial-dot" data-index="1"></button>
+      <button class="z-testimonial-dot" data-index="2"></button>
+    </div>
+    <div class="z-testimonial-arrows">
+      <button class="z-testimonial-arrow prev">←</button>
+      <button class="z-testimonial-arrow next">→</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const carousel = document.getElementById('testimonialCarousel');
+  if (!carousel) return;
+  
+  const slides = carousel.querySelectorAll('.z-testimonial-slide');
+  const dots = carousel.querySelectorAll('.z-testimonial-dot');
+  const prevBtn = carousel.querySelector('.prev');
+  const nextBtn = carousel.querySelector('.next');
+  
+  let currentIndex = 0;
+  let autoPlayInterval;
+  
+  function goTo(index) {
+    slides[currentIndex].classList.remove('active');
+    slides[currentIndex].classList.add('prev');
+    dots[currentIndex].classList.remove('active');
+    
+    currentIndex = (index + slides.length) % slides.length;
+    
+    setTimeout(() => {
+      slides.forEach(s => s.classList.remove('prev'));
+    }, 500);
+    
+    slides[currentIndex].classList.add('active');
+    dots[currentIndex].classList.add('active');
+  }
+  
+  function next() { goTo(currentIndex + 1); }
+  function prev() { goTo(currentIndex - 1); }
+  
+  function startAutoPlay() {
+    autoPlayInterval = setInterval(next, 5000);
+  }
+  
+  function stopAutoPlay() {
+    clearInterval(autoPlayInterval);
+  }
+  
+  nextBtn.addEventListener('click', () => { stopAutoPlay(); next(); });
+  prevBtn.addEventListener('click', () => { stopAutoPlay(); prev(); });
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => { stopAutoPlay(); goTo(i); });
+  });
+  
+  startAutoPlay();
+})();
+</script>
+</div>
+
+
+<!-- ========================================================================
+     7. PORTFOLIO FILTER & MODAL
+     Category filtering with fullscreen case study modal
+========================================================================= -->
+<div id="portfolio-filter-example">
+<style>
+.z-portfolio-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.z-filter-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 9999px;
+  font-family: var(--z-font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: var(--z-secondary);
+  color: var(--z-muted-foreground);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.z-filter-btn:hover {
+  color: var(--z-foreground);
+}
+
+.z-filter-btn.active {
+  background: var(--z-primary);
+  color: white;
+}
+
+.z-portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.z-portfolio-card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 16/10;
+}
+
+.z-portfolio-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.z-portfolio-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+.z-portfolio-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 20, 25, 0.8) 0%, transparent 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.z-portfolio-card:hover .overlay {
+  opacity: 1;
+}
+
+.z-portfolio-card h3 {
+  color: white;
+  font-family: var(--z-font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.z-portfolio-card p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  margin: 0.5rem 0 0;
+}
+
+/* Hide filtered items */
+.z-portfolio-card.hidden {
+  display: none;
+}
+
+/* Fullscreen Modal */
+.z-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 20, 25, 0.95);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.z-modal-overlay.open {
+  display: flex;
+}
+
+.z-modal-content {
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--z-card);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.z-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+</style>
+
+<div class="z-portfolio-filter">
+  <button class="z-filter-btn active" data-category="all">All</button>
+  <button class="z-filter-btn" data-category="vsl">VSLs</button>
+  <button class="z-filter-btn" data-category="youtube">YouTube</button>
+  <button class="z-filter-btn" data-category="brand">Brand</button>
+</div>
+
+<div class="z-portfolio-grid">
+  <div class="z-portfolio-card" data-category="vsl">
+    <img src="your-image.jpg" alt="Project 1">
+    <div class="overlay">
+      <h3>VSL Project Title</h3>
+      <p>Client Name • VSL</p>
+    </div>
+  </div>
+  <div class="z-portfolio-card" data-category="youtube">
+    <img src="your-image.jpg" alt="Project 2">
+    <div class="overlay">
+      <h3>YouTube Project Title</h3>
+      <p>Client Name • YouTube</p>
+    </div>
+  </div>
+  <div class="z-portfolio-card" data-category="brand">
+    <img src="your-image.jpg" alt="Project 3">
+    <div class="overlay">
+      <h3>Brand Video Title</h3>
+      <p>Client Name • Brand</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const filterBtns = document.querySelectorAll('.z-filter-btn');
+  const cards = document.querySelectorAll('.z-portfolio-card');
+  
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Update active button
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      const category = btn.dataset.category;
+      
+      // Filter cards
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+})();
+</script>
+</div>
+
+
+<!-- ========================================================================
+     8. STATS COUNTER ANIMATION
+     Animated number counting when scrolled into view
+========================================================================= -->
+<div id="stats-counter-example">
+<style>
+.z-stats-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 3rem 0;
+  background: var(--z-foreground);
+}
+
+.z-stat-item {
+  text-align: center;
+}
+
+.z-stat-value {
+  font-family: var(--z-font-display);
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.z-stat-label {
+  font-family: var(--z-font-body);
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+</style>
+
+<div class="z-stats-section">
+  <div class="z-stat-item">
+    <div class="z-stat-value" data-target="100">0</div>
+    <div class="z-stat-label">Long form videos edited</div>
+  </div>
+  <div class="z-stat-item">
+    <div class="z-stat-value" data-target="1000">0</div>
+    <div class="z-stat-label">Hooks produced</div>
+  </div>
+  <div class="z-stat-item">
+    <div class="z-stat-value" data-target="10" data-prefix="$" data-suffix="M+">0</div>
+    <div class="z-stat-label">Revenue generated</div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const statValues = document.querySelectorAll('.z-stat-value');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.dataset.target);
+        const prefix = el.dataset.prefix || '';
+        const suffix = el.dataset.suffix || '+';
+        const duration = 2000;
+        const step = target / (duration / 16);
+        let current = 0;
+        
+        const counter = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            current = target;
+            clearInterval(counter);
+          }
+          el.textContent = prefix + Math.floor(current) + suffix;
+        }, 16);
+        
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  
+  statValues.forEach(el => observer.observe(el));
+})();
+</script>
+</div>
+
+
+<!-- ========================================================================
+     9. PROCESS TIMELINE ANIMATION
+     Numbered steps with connecting line
+========================================================================= -->
+<div id="timeline-example">
+<style>
+.z-timeline {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.z-timeline::before {
+  content: '';
+  position: absolute;
+  left: 28px;
+  top: 40px;
+  bottom: 40px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--z-primary) 0%, rgba(26, 109, 204, 0.1) 100%);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.z-timeline.visible::before {
+  transform: scaleY(1);
+}
+
+.z-timeline-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.z-timeline.visible .z-timeline-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.z-timeline.visible .z-timeline-item:nth-child(1) { transition-delay: 0.1s; }
+.z-timeline.visible .z-timeline-item:nth-child(2) { transition-delay: 0.3s; }
+.z-timeline.visible .z-timeline-item:nth-child(3) { transition-delay: 0.5s; }
+.z-timeline.visible .z-timeline-item:nth-child(4) { transition-delay: 0.7s; }
+
+.z-timeline-marker {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.z-timeline-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--z-card);
+  border: 2px solid var(--z-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s ease;
+}
+
+.z-timeline-item:hover .z-timeline-circle {
+  border-color: rgba(26, 109, 204, 0.5);
+}
+
+.z-timeline-step {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 24px;
+  height: 24px;
+  background: var(--z-primary);
+  color: white;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.z-timeline-content h3 {
+  font-family: var(--z-font-display);
+  font-size: 1.25rem;
+  color: var(--z-foreground);
+  margin: 0 0 0.5rem;
+}
+
+.z-timeline-content p {
+  color: var(--z-muted-foreground);
+  margin: 0;
+  line-height: 1.6;
+}
+</style>
+
+<div class="z-timeline" id="processTimeline">
+  <div class="z-timeline-item">
+    <div class="z-timeline-marker">
+      <div class="z-timeline-circle">💡</div>
+      <span class="z-timeline-step">01</span>
+    </div>
+    <div class="z-timeline-content">
+      <h3>Strategy before execution</h3>
+      <p>Every project begins with understanding your goals, audience, and market.</p>
+    </div>
+  </div>
+  <div class="z-timeline-item">
+    <div class="z-timeline-marker">
+      <div class="z-timeline-circle">🎯</div>
+      <span class="z-timeline-step">02</span>
+    </div>
+    <div class="z-timeline-content">
+      <h3>Design aligned with performance</h3>
+      <p>Beautiful isn't enough. Our work is built to convert and engage.</p>
+    </div>
+  </div>
+  <div class="z-timeline-item">
+    <div class="z-timeline-marker">
+      <div class="z-timeline-circle">🔧</div>
+      <span class="z-timeline-step">03</span>
+    </div>
+    <div class="z-timeline-content">
+      <h3>Technology with real use cases</h3>
+      <p>Every tool and integration solves a specific problem you face.</p>
+    </div>
+  </div>
+  <div class="z-timeline-item">
+    <div class="z-timeline-marker">
+      <div class="z-timeline-circle">🤝</div>
+      <span class="z-timeline-step">04</span>
+    </div>
+    <div class="z-timeline-content">
+      <h3>Long-term partnership mindset</h3>
+      <p>We build relationships that grow with your business.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const timeline = document.getElementById('processTimeline');
+  if (!timeline) return;
+  
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      timeline.classList.add('visible');
+    }
+  }, { threshold: 0.2 });
+  
+  observer.observe(timeline);
+})();
+</script>
+</div>
+
+
+<!-- ========================================================================
+     10. GRADIENT TEXT EFFECTS
+========================================================================= -->
+<style>
+.z-gradient-text {
+  background: linear-gradient(90deg, #1a6dcc, #4d93e0, #1a6dcc);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s linear infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Static gradient */
+.z-gradient-text-static {
+  background: linear-gradient(135deg, #1a6dcc 0%, #4d93e0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+</style>
+
+<h2 class="z-gradient-text">Animated Gradient Headline</h2>
+<h2 class="z-gradient-text-static">Static Gradient Headline</h2>
+
+
+<!-- ========================================================================
+     11. GRAIN/NOISE TEXTURE OVERLAY
+========================================================================= -->
+<style>
+.z-grain-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+</style>
+
+<div class="z-grain-overlay"></div>
+
+
+<!-- ========================================================================
+     12. GLASSMORPHISM CARDS
+========================================================================= -->
+<style>
+.z-glass-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(221, 226, 232, 0.5);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(15, 20, 25, 0.04);
+}
+
+/* Dark mode glass */
+.dark-mode .z-glass-card {
+  background: rgba(17, 21, 27, 0.6);
+  border-color: rgba(37, 44, 56, 0.5);
+}
+</style>
+
+
+<!-- ========================================================================
+     13. HOVER LIFT EFFECTS
+========================================================================= -->
+<style>
+.z-hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.z-hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(15, 20, 25, 0.08);
+}
+
+.z-hover-scale {
+  transition: transform 0.2s ease;
+}
+
+.z-hover-scale:hover {
+  transform: scale(1.02);
+}
+</style>
+
+
+<!-- ========================================================================
+     14. STAGGERED FADE-UP LISTS
+========================================================================= -->
+<style>
+.z-stagger-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.z-stagger-list > * {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUpIn 0.6s ease forwards;
+}
+
+.z-stagger-list > *:nth-child(1) { animation-delay: 0.1s; }
+.z-stagger-list > *:nth-child(2) { animation-delay: 0.2s; }
+.z-stagger-list > *:nth-child(3) { animation-delay: 0.3s; }
+.z-stagger-list > *:nth-child(4) { animation-delay: 0.4s; }
+.z-stagger-list > *:nth-child(5) { animation-delay: 0.5s; }
+.z-stagger-list > *:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeUpIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
+
+<!-- ========================================================================
+     15. ANIMATED BLUR ORBS (Background Decoration)
+========================================================================= -->
+<style>
+.z-blur-orbs {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.z-blur-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
+.z-blur-orb-1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(26, 109, 204, 0.1);
+  top: 20%;
+  left: 20%;
+  animation: orbFloat1 8s ease-in-out infinite;
+}
+
+.z-blur-orb-2 {
+  width: 300px;
+  height: 300px;
+  background: rgba(77, 147, 224, 0.08);
+  bottom: 20%;
+  right: 20%;
+  animation: orbFloat2 10s ease-in-out infinite;
+}
+
+@keyframes orbFloat1 {
+  0%, 100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1) translate(10px, -10px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes orbFloat2 {
+  0%, 100% {
+    transform: scale(1.1) translate(0, 0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1) translate(-10px, 10px);
+    opacity: 0.5;
+  }
+}
+</style>
+
+<div class="z-blur-orbs">
+  <div class="z-blur-orb z-blur-orb-1"></div>
+  <div class="z-blur-orb z-blur-orb-2"></div>
+</div>
+
+
+<!-- ========================================================================
+     END OF ANIMATIONS LIBRARY
+     
+     For more help implementing these in Elementor:
+     1. Copy the HTML section you need
+     2. In Elementor, add an HTML widget
+     3. Paste the code (CSS, HTML, and JS together)
+     4. Adjust values as needed
+     
+     For global styles (design tokens, fonts, etc.):
+     Go to Appearance > Customize > Additional CSS
+     and paste the CSS Variables section.
+========================================================================= -->
+
+</body>
+</html>

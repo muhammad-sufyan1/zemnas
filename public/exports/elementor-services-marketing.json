@@ -1,0 +1,212 @@
+{
+  "version": "1.0.0",
+  "title": "Zemnas - Marketing Services Export",
+  "pages": {
+    "marketing_main": {
+      "title": "Marketing Engine - Zemnas",
+      "url": "/services/marketing",
+      "sections": [
+        {
+          "type": "hero",
+          "content": {
+            "badge": "Digital Marketing & Growth",
+            "headline": "Marketing that moves the needle.",
+            "subheadline": "B2B marketing strategies, conversion funnels, and performance campaigns that drive measurable pipeline growth."
+          }
+        },
+        {
+          "type": "system_visual",
+          "content": {
+            "headline": "Marketing as a system, not a series of tactics",
+            "description": "We build interconnected marketing engines where every channel, campaign, and touchpoint works together toward your growth goals.",
+            "stages": [
+              {"label": "Awareness", "description": "Getting your brand in front of the right people."},
+              {"label": "Consideration", "description": "Nurturing interest with valuable content."},
+              {"label": "Conversion", "description": "Turning prospects into customers."},
+              {"label": "Retention", "description": "Keeping customers engaged and growing."}
+            ]
+          }
+        },
+        {
+          "type": "modules",
+          "content": {
+            "modules": [
+              {
+                "icon": "TrendingUp",
+                "title": "Demand Generation",
+                "description": "B2B lead generation systems that fill your pipeline with qualified prospects.",
+                "image": "src/assets/work/marketing-dashboard.jpg",
+                "link": "/services/marketing/demand-generation"
+              },
+              {
+                "icon": "Layout",
+                "title": "Funnels & Landing Pages",
+                "description": "High-converting funnels and landing pages that turn traffic into customers.",
+                "image": "src/assets/work/ecommerce-platform.jpg",
+                "link": "/services/marketing/funnels-landing-pages"
+              },
+              {
+                "icon": "Globe",
+                "title": "Website Infrastructure",
+                "description": "Marketing websites built for speed, SEO, and conversions.",
+                "image": "src/assets/work/ai-platform.jpg",
+                "link": "/services/marketing/website-infrastructure"
+              },
+              {
+                "icon": "BarChart",
+                "title": "Performance Optimization",
+                "description": "Data-driven optimization to improve campaign ROI continuously.",
+                "image": "src/assets/work/managed-services.jpg",
+                "link": "/services/marketing/performance-optimization"
+              }
+            ]
+          }
+        },
+        {
+          "type": "timeline",
+          "content": {
+            "headline": "Our approach to growth",
+            "steps": [
+              {"label": "Audit", "description": "Understanding your current state and opportunities."},
+              {"label": "Strategy", "description": "Defining goals, channels, and messaging."},
+              {"label": "Build", "description": "Creating the assets and infrastructure."},
+              {"label": "Launch", "description": "Executing campaigns with precision."},
+              {"label": "Optimize", "description": "Continuous improvement based on data."}
+            ]
+          }
+        },
+        {
+          "type": "bridge_section",
+          "content": {
+            "headline": "Where marketing meets creative and technology",
+            "description": "Great marketing requires more than tactics. It needs compelling creative and the right technology stack to scale.",
+            "links": [
+              {"text": "Creative & Marketing Studio", "url": "/services/creative"},
+              {"text": "Software & AI Solutions", "url": "/services/software"}
+            ]
+          }
+        },
+        {
+          "type": "engagements",
+          "content": {
+            "headline": "Selected work",
+            "items": [
+              {"title": "SaaS Pipeline Engine", "outcome": "300% increase in qualified leads", "image": "src/assets/work/marketing-dashboard.jpg"},
+              {"title": "E-commerce Growth System", "outcome": "5.2x ROAS improvement", "image": "src/assets/work/ecommerce-platform.jpg"},
+              {"title": "B2B Lead Generation", "outcome": "45% reduction in CAC", "image": "src/assets/work/ai-platform.jpg"}
+            ]
+          }
+        },
+        {
+          "type": "closing",
+          "content": {
+            "headline": "Let's build a growth system that fits your business.",
+            "subheadline": "We focus on clarity, alignment, and steady progress — not noise.",
+            "cta": {"text": "Start a conversation", "link": "/contact"}
+          }
+        }
+      ]
+    },
+    "sub_pages": {
+      "demand_generation": {
+        "title": "Demand Generation - Marketing Engine",
+        "url": "/services/marketing/demand-generation",
+        "hero": {
+          "headline": "Fill your pipeline with qualified leads.",
+          "subheadline": "B2B demand generation systems that create consistent, predictable growth."
+        },
+        "features": [
+          {"icon": "Target", "title": "ICP Targeting", "description": "Reaching the right accounts with precision targeting."},
+          {"icon": "Mail", "title": "Outbound Campaigns", "description": "Multi-channel outreach that gets responses."},
+          {"icon": "Magnet", "title": "Inbound Systems", "description": "Content and SEO that attract qualified prospects."},
+          {"icon": "RefreshCw", "title": "Lead Nurturing", "description": "Automated sequences that build relationships."}
+        ],
+        "case_study": {
+          "client": "B2B SaaS Company",
+          "challenge": "Inconsistent lead flow and high cost per acquisition.",
+          "solution": "Implemented multi-channel demand gen system with content, outbound, and paid.",
+          "results": [
+            {"metric": "300%", "label": "Lead increase"},
+            {"metric": "-45%", "label": "CAC reduction"},
+            {"metric": "$1.2M", "label": "Pipeline generated"}
+          ]
+        },
+        "process": [
+          {"step": 1, "title": "Research", "description": "Deep dive into your ICP and market."},
+          {"step": 2, "title": "Strategy", "description": "Channel mix and messaging framework."},
+          {"step": 3, "title": "Build", "description": "Creating campaigns and automation."},
+          {"step": 4, "title": "Launch", "description": "Systematic rollout and testing."},
+          {"step": 5, "title": "Optimize", "description": "Data-driven improvements."}
+        ]
+      },
+      "funnels_landing_pages": {
+        "title": "Funnels & Landing Pages - Marketing Engine",
+        "url": "/services/marketing/funnels-landing-pages",
+        "hero": {
+          "headline": "Convert more visitors into customers.",
+          "subheadline": "High-converting funnels and landing pages engineered for results."
+        },
+        "features": [
+          {"icon": "Layout", "title": "Conversion Design", "description": "Pages built on proven conversion principles."},
+          {"icon": "TestTube", "title": "A/B Testing", "description": "Continuous testing to improve performance."},
+          {"icon": "Zap", "title": "Speed Optimized", "description": "Fast-loading pages that don't lose visitors."},
+          {"icon": "Link", "title": "Integration Ready", "description": "Connected to your CRM and marketing stack."}
+        ],
+        "funnel_types": [
+          {"title": "Lead Generation Funnels", "description": "Capture and qualify leads efficiently."},
+          {"title": "Webinar Funnels", "description": "Registration to attendance optimization."},
+          {"title": "Product Launch Funnels", "description": "Build anticipation and drive launch sales."},
+          {"title": "VSL Funnels", "description": "Video sales letter pages that convert."}
+        ],
+        "case_study": {
+          "client": "Course Creator",
+          "challenge": "Landing pages converting at only 2.5%.",
+          "solution": "Complete funnel redesign with improved copy, design, and page speed.",
+          "results": [
+            {"metric": "8.4%", "label": "Conversion rate"},
+            {"metric": "3.4x", "label": "Improvement"},
+            {"metric": "$420K", "label": "Additional revenue"}
+          ]
+        }
+      },
+      "website_infrastructure": {
+        "title": "Website Infrastructure - Marketing Engine",
+        "url": "/services/marketing/website-infrastructure",
+        "hero": {
+          "headline": "Websites built for growth.",
+          "subheadline": "Marketing websites designed for speed, SEO, and conversions."
+        },
+        "features": [
+          {"icon": "Zap", "title": "Performance First", "description": "Lightning-fast load times that improve rankings and conversions."},
+          {"icon": "Search", "title": "SEO Architecture", "description": "Technical SEO built into the foundation."},
+          {"icon": "Smartphone", "title": "Mobile Optimized", "description": "Perfect experience on every device."},
+          {"icon": "Settings", "title": "CMS Integration", "description": "Easy content management for your team."}
+        ],
+        "tech_stack": [
+          {"title": "React/Next.js", "description": "Modern frameworks for performance."},
+          {"title": "Headless CMS", "description": "Flexible content management."},
+          {"title": "CDN Delivery", "description": "Global content delivery."},
+          {"title": "Analytics", "description": "Built-in tracking and insights."}
+        ]
+      },
+      "performance_optimization": {
+        "title": "Performance Optimization - Marketing Engine",
+        "url": "/services/marketing/performance-optimization",
+        "hero": {
+          "headline": "Make every dollar work harder.",
+          "subheadline": "Data-driven optimization to continuously improve marketing ROI."
+        },
+        "features": [
+          {"icon": "BarChart", "title": "Analytics Setup", "description": "Comprehensive tracking across all channels."},
+          {"icon": "TrendingUp", "title": "CRO Programs", "description": "Systematic conversion rate optimization."},
+          {"icon": "Target", "title": "Attribution Modeling", "description": "Understanding what's actually driving results."},
+          {"icon": "RefreshCw", "title": "Continuous Testing", "description": "Always improving based on data."}
+        ],
+        "metrics": [
+          {"title": "Conversion Rate", "value": "+85%", "description": "Average improvement across clients."},
+          {"title": "Revenue Per Visitor", "value": "+120%", "description": "More value from existing traffic."}
+        ]
+      }
+    }
+  }
+}

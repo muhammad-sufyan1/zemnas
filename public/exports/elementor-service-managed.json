@@ -1,0 +1,129 @@
+{
+  "elementor_export": {
+    "version": "3.0",
+    "type": "service_page",
+    "page_name": "Managed Services",
+    "page_title": "Managed Services - Ongoing Digital & Technology Support | Zemnas",
+    "meta_description": "Ongoing digital support, maintenance, and optimization to keep your systems running at peak performance."
+  },
+
+  "sections": [
+    {
+      "id": "hero",
+      "type": "editorial_hero",
+      "settings": {
+        "min_height": "70vh"
+      },
+      "background_elements": [
+        {"type": "canvas_dot_animation", "dot_count": 25}
+      ],
+      "content": {
+        "badge": {"text": "Managed Services"},
+        "heading": {
+          "line_1": "Your digital systems,",
+          "line_2": "always running smoothly.",
+          "line_2_color": "#687076"
+        },
+        "subtitle": "Ongoing support, maintenance, and optimization for websites, marketing, and technology."
+      }
+    },
+
+    {
+      "id": "philosophy",
+      "type": "text_section",
+      "header": {
+        "eyebrow": "Our Approach",
+        "title": "We're your always-on digital team."
+      },
+      "content": {
+        "paragraphs": [
+          "Digital systems need ongoing care. Updates, optimizations, security patches, and performance monitoring keep everything running at peak.",
+          "Our managed services give you peace of mind and a partner who's always looking out for your digital infrastructure."
+        ]
+      }
+    },
+
+    {
+      "id": "support_areas",
+      "type": "icon_card_grid",
+      "header": {
+        "eyebrow": "What we manage",
+        "title": "Comprehensive support coverage"
+      },
+      "cards": [
+        {
+          "icon": "globe",
+          "title": "Website Maintenance",
+          "description": "Updates, backups, security, and performance optimization for your web properties.",
+          "link": "/services/managed/website-maintenance"
+        },
+        {
+          "icon": "trending-up",
+          "title": "Marketing & Creative Ops",
+          "description": "Ongoing campaign support, content updates, and marketing operations.",
+          "link": "/services/managed/marketing-creative-ops"
+        },
+        {
+          "icon": "wrench",
+          "title": "Technical Support",
+          "description": "Software maintenance, bug fixes, and technical troubleshooting.",
+          "link": "/services/managed/technical-support"
+        },
+        {
+          "icon": "settings",
+          "title": "Ongoing Optimization",
+          "description": "Continuous improvement of performance, conversion, and user experience.",
+          "link": "/services/managed/ongoing-optimization"
+        }
+      ]
+    },
+
+    {
+      "id": "support_flow",
+      "type": "process_visualization",
+      "header": {
+        "title": "How support works"
+      },
+      "flow": [
+        {"step": "Request", "description": "Submit via email, chat, or ticket system"},
+        {"step": "Triage", "description": "We assess urgency and assign resources"},
+        {"step": "Resolution", "description": "Fix implemented with status updates"},
+        {"step": "Review", "description": "Confirmation and documentation"}
+      ]
+    },
+
+    {
+      "id": "editorial",
+      "type": "content_section",
+      "header": {
+        "title": "Why managed services matter"
+      },
+      "content": {
+        "paragraphs": [
+          "Most digital projects don't fail at launch—they fail from neglect. Security vulnerabilities go unpatched. Performance degrades. Content gets stale.",
+          "A managed services partnership ensures your digital investment continues to deliver value year after year."
+        ]
+      }
+    },
+
+    {
+      "id": "closing_cta",
+      "type": "cta_section",
+      "content": {
+        "title": "Ready for peace of mind?",
+        "subtitle": "Let's discuss how our managed services can support your digital infrastructure.",
+        "buttons": [
+          {"text": "Start a Conversation", "url": "/contact", "type": "primary"},
+          {"text": "View All Services", "url": "/services/creative", "type": "outline"}
+        ]
+      }
+    }
+  ],
+
+  "sub_pages": [
+    {"slug": "website-maintenance", "title": "Website Maintenance"},
+    {"slug": "marketing-creative-ops", "title": "Marketing & Creative Ops"},
+    {"slug": "technical-support", "title": "Technical Support"},
+    {"slug": "ongoing-optimization", "title": "Ongoing Optimization"}
+  ]
+}

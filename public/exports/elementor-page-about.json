@@ -1,0 +1,180 @@
+{
+  "elementor_export": {
+    "version": "3.0",
+    "type": "page",
+    "page_name": "About",
+    "page_title": "About Zemnas - Digital Partner for Ambitious Growth",
+    "meta_description": "Zemnas is a digital partner for ambitious companies. We combine creative, marketing, software, and AI to build systems that scale."
+  },
+
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero_section",
+      "settings": {
+        "min_height": "70vh",
+        "padding_top": "5rem",
+        "background": "#fafbfc"
+      },
+      "background_elements": [
+        {
+          "type": "canvas_dot_animation",
+          "dot_count": 20,
+          "dot_color": "hsla(215, 90%, 50%)",
+          "connection_distance": 180,
+          "pulse_animation": true
+        }
+      ],
+      "content": {
+        "alignment": "center",
+        "max_width": "896px",
+        "elements": [
+          {
+            "type": "logo",
+            "src": "zemnas-logo.png",
+            "width": "80px",
+            "animation": "fade_up"
+          },
+          {
+            "type": "heading",
+            "tag": "h1",
+            "content": {
+              "line_1": "We help businesses grow",
+              "line_2": "through thoughtful digital systems.",
+              "line_2_color": "#687076"
+            },
+            "animation": "fade_up",
+            "delay": "0.1s"
+          },
+          {
+            "type": "paragraph",
+            "content": "Zemnas is a digital partner for ambitious companies. We combine creative, marketing, software, and AI to build systems that scale.",
+            "font_size": "1.25rem",
+            "animation": "fade_up",
+            "delay": "0.3s"
+          },
+          {
+            "type": "social_link",
+            "icon": "linkedin",
+            "text": "Follow us on LinkedIn",
+            "url": "https://www.linkedin.com/company/zemnas/",
+            "animation": "fade_up",
+            "delay": "0.5s"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "story",
+      "type": "content_section",
+      "settings": {
+        "padding": "4rem 0 5rem",
+        "background": "rgba(241, 244, 249, 0.2)"
+      },
+      "content": {
+        "max_width": "768px",
+        "alignment": "center",
+        "elements": [
+          {
+            "type": "heading",
+            "tag": "h2",
+            "content": "Our Story"
+          },
+          {
+            "type": "rich_text",
+            "paragraphs": [
+              "Zemnas was founded with a simple belief: businesses deserve partners who understand both the creative and technical sides of digital growth.",
+              "Too often, companies work with agencies that excel at design but struggle with implementation, or technical teams that build powerful systems but miss the human element. We bridge that gap.",
+              "Today, we work with companies across the globe, from early-stage startups to established enterprises, helping them build digital systems that actually work."
+            ],
+            "font_size": "1.125rem",
+            "line_height": "1.8"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "values",
+      "type": "content_section",
+      "settings": {
+        "padding": "4rem 0 5rem",
+        "background": "transparent"
+      },
+      "header": {
+        "title": "What We Believe",
+        "alignment": "center"
+      },
+      "content": {
+        "type": "icon_card_grid",
+        "columns": 2,
+        "gap": "2rem",
+        "max_width": "1024px",
+        "cards": [
+          {
+            "icon": "target",
+            "title": "Strategy First",
+            "description": "We believe every solution should start with understanding the problem deeply before writing a single line of code."
+          },
+          {
+            "icon": "users",
+            "title": "Partnership Mindset",
+            "description": "We see ourselves as an extension of your team, invested in your success as much as you are."
+          },
+          {
+            "icon": "zap",
+            "title": "Pragmatic Innovation",
+            "description": "We embrace new technology when it solves real problems, not just because it is new."
+          },
+          {
+            "icon": "heart",
+            "title": "Craft & Care",
+            "description": "Every detail matters. We take pride in the quality of our work and the relationships we build."
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "team",
+      "type": "content_section",
+      "settings": {
+        "padding": "4rem 0 5rem",
+        "background": "rgba(241, 244, 249, 0.2)"
+      },
+      "header": {
+        "title": "Our Team",
+        "subtitle": "A small, focused team of strategists, designers, developers, and marketers.",
+        "alignment": "center"
+      },
+      "content": {
+        "type": "team_grid",
+        "columns": 4,
+        "gap": "1.5rem",
+        "members": [
+          {
+            "name": "Team Member",
+            "role": "Founder & CEO",
+            "avatar_type": "initials"
+          },
+          {
+            "name": "Team Member",
+            "role": "Creative Director",
+            "avatar_type": "initials"
+          },
+          {
+            "name": "Team Member",
+            "role": "Head of Engineering",
+            "avatar_type": "initials"
+          },
+          {
+            "name": "Team Member",
+            "role": "Growth Lead",
+            "avatar_type": "initials"
+          }
+        ]
+      }
+    }
+  ]
+}

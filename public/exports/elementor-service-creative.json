@@ -1,0 +1,244 @@
+{
+  "elementor_export": {
+    "version": "3.0",
+    "type": "service_page",
+    "page_name": "Creative & Marketing Studio",
+    "page_title": "Creative Studio - Video, Motion, Design & Visual Systems | Zemnas",
+    "meta_description": "Video, motion, UI, and visual systems designed to work across platforms. Creative built for modern digital brands."
+  },
+
+  "sections": [
+    {
+      "id": "hero",
+      "type": "editorial_hero",
+      "settings": {
+        "min_height": "70vh",
+        "background": "#fafbfc"
+      },
+      "background_elements": [
+        {
+          "type": "canvas_dot_animation",
+          "dot_count": 25,
+          "dot_color": "hsla(215, 90%, 50%)",
+          "connection_distance": 200,
+          "pulse_animation": true
+        }
+      ],
+      "content": {
+        "badge": {
+          "icon": "pulse_dot",
+          "text": "Creative Studio"
+        },
+        "heading": {
+          "line_1": "Creative built for",
+          "line_2": "modern digital brands.",
+          "line_2_color": "#687076"
+        },
+        "subtitle": "Video, motion, UI, and visual systems designed to work across platforms."
+      }
+    },
+
+    {
+      "id": "philosophy",
+      "type": "text_section",
+      "settings": {
+        "padding": "4rem 0 5rem",
+        "background": "rgba(241, 244, 249, 0.3)"
+      },
+      "header": {
+        "eyebrow": "Our Philosophy",
+        "title": "We treat creative as a strategic asset."
+      },
+      "content": {
+        "layout": "staggered_text",
+        "paragraphs": [
+          "Creative isn't decoration—it's the first impression, the trust signal, the conversion lever. We approach every video, design, and visual system with strategy built in.",
+          "Our work is designed to perform across channels, scale with your brand, and evolve as your business grows."
+        ],
+        "animation": "fade_up_stagger"
+      }
+    },
+
+    {
+      "id": "capabilities",
+      "type": "alternating_modules",
+      "settings": {
+        "padding": "5rem 0 7rem"
+      },
+      "header": {
+        "eyebrow": "What we create",
+        "title": "Full-spectrum creative services"
+      },
+      "modules": [
+        {
+          "number": "01",
+          "title": "Explainer & Product Videos",
+          "description": "Clear, concise videos designed to explain products, features, and workflows without overwhelming the viewer.",
+          "image": "video-campaign.jpg",
+          "image_position": "left",
+          "hover_stats": "85% viewer retention",
+          "hover_cta": "See video examples",
+          "link": "/services/creative/explainer-videos",
+          "has_video_indicator": true
+        },
+        {
+          "number": "02",
+          "title": "Motion & Animation",
+          "description": "Dynamic motion graphics and animations that bring static content to life and capture attention across platforms.",
+          "image": "brand-project.jpg",
+          "image_position": "right",
+          "hover_stats": "3x engagement boost",
+          "hover_cta": "View motion work",
+          "link": "/services/creative/motion-animation",
+          "has_video_indicator": true
+        },
+        {
+          "number": "03",
+          "title": "Short-form Content",
+          "description": "Scroll-stopping social content optimized for TikTok, Reels, and Stories that drives engagement and shares.",
+          "image": "marketing-dashboard.jpg",
+          "image_position": "left",
+          "hover_stats": "2M+ views generated",
+          "hover_cta": "Explore social content",
+          "link": "/services/creative/short-form-content"
+        },
+        {
+          "number": "04",
+          "title": "UI/UX Design",
+          "description": "Thoughtful interface design that balances beauty with usability, creating products people love to use.",
+          "image": "ecommerce-platform.jpg",
+          "image_position": "right",
+          "hover_stats": "40% conversion lift",
+          "hover_cta": "See UI projects",
+          "link": "/services/creative/ui-ux-design"
+        },
+        {
+          "number": "05",
+          "title": "Marketing Creatives",
+          "description": "Campaign assets, ads, and promotional materials designed for impact and conversion across channels.",
+          "image": "ai-platform.jpg",
+          "image_position": "left",
+          "hover_stats": "5x ROAS average",
+          "hover_cta": "View campaigns",
+          "link": "/services/creative/marketing-creatives"
+        },
+        {
+          "number": "06",
+          "title": "Brand Visual Systems",
+          "description": "Comprehensive visual identities that scale from logo to full brand guidelines, ensuring consistency everywhere.",
+          "image": "managed-services.jpg",
+          "image_position": "right",
+          "hover_stats": "50+ brands built",
+          "hover_cta": "Explore brand work",
+          "link": "/services/creative/brand-visual-systems"
+        }
+      ]
+    },
+
+    {
+      "id": "timeline",
+      "type": "process_timeline",
+      "settings": {
+        "padding": "5rem 0",
+        "background": "rgba(241, 244, 249, 0.5)"
+      },
+      "header": {
+        "eyebrow": "Our Process",
+        "title": "From concept to delivery"
+      },
+      "steps": [
+        {"number": "01", "title": "Discovery", "description": "Understanding your goals, audience, and competitive landscape"},
+        {"number": "02", "title": "Strategy", "description": "Defining the creative direction and key messages"},
+        {"number": "03", "title": "Production", "description": "Creating the assets with iterative feedback loops"},
+        {"number": "04", "title": "Delivery", "description": "Optimized files for all platforms and use cases"}
+      ]
+    },
+
+    {
+      "id": "bridge",
+      "type": "bridge_section",
+      "settings": {
+        "padding": "5rem 0",
+        "background": "linear-gradient(135deg, rgba(26, 109, 204, 0.03), rgba(241, 244, 249, 0.5))"
+      },
+      "content": {
+        "title": "Creative that drives growth",
+        "subtitle": "Our creative work is designed to integrate seamlessly with marketing campaigns and technology platforms.",
+        "cta": {
+          "text": "Explore Marketing Services",
+          "url": "/services/marketing",
+          "icon": "arrow-right"
+        }
+      }
+    },
+
+    {
+      "id": "related_services",
+      "type": "related_cards",
+      "settings": {
+        "padding": "4rem 0 5rem"
+      },
+      "header": {
+        "title": "Related Capabilities"
+      },
+      "cards": [
+        {
+          "title": "Marketing Engine",
+          "description": "B2B marketing, funnels, and growth strategies",
+          "url": "/services/marketing"
+        },
+        {
+          "title": "Software & AI",
+          "description": "Custom development and intelligent automation",
+          "url": "/services/software"
+        }
+      ]
+    },
+
+    {
+      "id": "closing_cta",
+      "type": "cta_section",
+      "content": {
+        "title": "Ready to elevate your creative?",
+        "subtitle": "Let's discuss how our creative team can help your brand stand out.",
+        "buttons": [
+          {"text": "Start a Project", "url": "/contact", "type": "primary"},
+          {"text": "View Our Work", "url": "/work", "type": "outline"}
+        ]
+      }
+    }
+  ],
+
+  "sub_pages": [
+    {
+      "slug": "explainer-videos",
+      "title": "Explainer & Product Videos",
+      "hero_subtitle": "Clear, concise videos that convert viewers into customers."
+    },
+    {
+      "slug": "motion-animation",
+      "title": "Motion & Animation",
+      "hero_subtitle": "Dynamic motion graphics that capture attention."
+    },
+    {
+      "slug": "short-form-content",
+      "title": "Short-form Content",
+      "hero_subtitle": "Scroll-stopping content for social platforms."
+    },
+    {
+      "slug": "ui-ux-design",
+      "title": "UI/UX Design",
+      "hero_subtitle": "Interfaces that balance beauty with usability."
+    },
+    {
+      "slug": "marketing-creatives",
+      "title": "Marketing Creatives",
+      "hero_subtitle": "Campaign assets designed for conversion."
+    },
+    {
+      "slug": "brand-visual-systems",
+      "title": "Brand Visual Systems",
+      "hero_subtitle": "Comprehensive identities that scale with your business."
+    }
+  ]
+}

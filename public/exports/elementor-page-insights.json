@@ -1,0 +1,152 @@
+{
+  "elementor_export": {
+    "version": "3.0",
+    "type": "page",
+    "page_name": "Insights / Blog",
+    "page_title": "Insights - Thoughts on Growth, Technology, and Craft | Zemnas",
+    "meta_description": "Perspectives from our team on building digital systems that work."
+  },
+
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero_section",
+      "settings": {
+        "min_height": "50vh",
+        "padding_top": "5rem"
+      },
+      "background_elements": [
+        {
+          "type": "canvas_dot_animation",
+          "dot_count": 20
+        }
+      ],
+      "content": {
+        "alignment": "center",
+        "max_width": "896px",
+        "elements": [
+          {
+            "type": "badge",
+            "icon": "pulse_dot",
+            "text": "Insights"
+          },
+          {
+            "type": "heading",
+            "tag": "h1",
+            "content": {
+              "line_1": "Thoughts on",
+              "line_2": "growth, technology, and craft.",
+              "line_2_color": "#687076"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": "Perspectives from our team on building digital systems that work."
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "featured_post",
+      "type": "featured_article",
+      "settings": {
+        "padding": "3rem 0 4rem"
+      },
+      "layout": {
+        "type": "two_column",
+        "image_position": "left"
+      },
+      "content": {
+        "eyebrow": "Featured",
+        "category_display": true,
+        "title_size": "2rem",
+        "show_excerpt": true,
+        "show_meta": true,
+        "hover_effect": "scale_image"
+      }
+    },
+
+    {
+      "id": "filter_bar",
+      "type": "filter_section",
+      "content": {
+        "categories": [
+          {"id": "all", "label": "All"},
+          {"id": "strategy", "label": "Strategy"},
+          {"id": "creative", "label": "Creative"},
+          {"id": "technology", "label": "Technology"},
+          {"id": "growth", "label": "Growth"}
+        ],
+        "search": {
+          "enabled": true,
+          "placeholder": "Search articles...",
+          "icon": "search"
+        }
+      }
+    },
+
+    {
+      "id": "articles_grid",
+      "type": "blog_grid",
+      "settings": {
+        "padding": "0 0 5rem",
+        "columns": 3,
+        "gap": "2rem"
+      },
+      "article_card": {
+        "image_aspect_ratio": "3:2",
+        "show_category": true,
+        "show_title": true,
+        "show_excerpt": true,
+        "show_date": true,
+        "show_read_time": true,
+        "hover_effect": "scale_image",
+        "animation": "fade_up_stagger"
+      }
+    },
+
+    {
+      "id": "newsletter_cta",
+      "type": "newsletter_section",
+      "settings": {
+        "padding": "5rem 0",
+        "background": "rgba(241, 244, 249, 0.3)"
+      },
+      "content": {
+        "title": "Stay in the loop",
+        "subtitle": "Get insights delivered to your inbox. No spam, just thoughtful content on growth and technology.",
+        "form": {
+          "email_placeholder": "Enter your email",
+          "button_text": "Subscribe",
+          "button_icon": "arrow-right"
+        }
+      }
+    }
+  ],
+
+  "article_template": {
+    "layout": {
+      "max_width": "768px",
+      "sidebar": false
+    },
+    "components": {
+      "breadcrumb": true,
+      "category_badge": true,
+      "title": "h1",
+      "meta": ["date", "read_time", "author"],
+      "featured_image": true,
+      "content_area": {
+        "typography": "editorial",
+        "code_blocks": true,
+        "blockquotes": true,
+        "images": true
+      },
+      "social_share": ["twitter", "linkedin", "copy_link"],
+      "related_articles": {
+        "count": 3,
+        "layout": "grid"
+      }
+    }
+  }
+}

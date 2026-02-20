@@ -1,0 +1,150 @@
+{
+  "elementor_export": {
+    "version": "3.0",
+    "type": "page",
+    "page_name": "Contact",
+    "page_title": "Contact Zemnas - Start a Conversation",
+    "meta_description": "Whether you have a project in mind or just want to explore possibilities, we would love to hear from you."
+  },
+
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero_section",
+      "settings": {
+        "min_height": "50vh",
+        "padding_top": "5rem",
+        "background": "#fafbfc"
+      },
+      "background_elements": [
+        {
+          "type": "canvas_dot_animation",
+          "dot_count": 18,
+          "dot_color": "hsla(215, 90%, 50%)",
+          "connection_distance": 180
+        }
+      ],
+      "content": {
+        "alignment": "center",
+        "max_width": "896px",
+        "elements": [
+          {
+            "type": "logo",
+            "src": "zemnas-logo.png",
+            "width": "64px"
+          },
+          {
+            "type": "heading",
+            "tag": "h1",
+            "content": {
+              "line_1": "Let's start a",
+              "line_2": "conversation.",
+              "line_2_color": "#687076"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": "Whether you have a project in mind or just want to explore possibilities, we would love to hear from you.",
+            "font_size": "1.25rem"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "contact_form_section",
+      "type": "two_column_section",
+      "settings": {
+        "padding": "4rem 0 5rem",
+        "gap": "4rem"
+      },
+      "layout": {
+        "columns": "1fr 1fr",
+        "gap": "4rem"
+      },
+      "left_column": {
+        "type": "contact_form",
+        "background": "#ffffff",
+        "border": "1px solid #dde2e8",
+        "border_radius": "1rem",
+        "padding": "2rem",
+        "title": "Send us a message",
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Name *",
+            "placeholder": "Your name",
+            "required": true
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": "you@company.com",
+            "required": true
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Company",
+            "placeholder": "Your company (optional)",
+            "required": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Message *",
+            "placeholder": "Tell us about your project or how we can help...",
+            "rows": 5,
+            "required": true
+          }
+        ],
+        "submit_button": {
+          "text": "Send Message",
+          "icon": "send",
+          "loading_text": "Sending..."
+        }
+      },
+      "right_column": {
+        "type": "contact_info",
+        "sections": [
+          {
+            "title": "Email Us",
+            "icon": "mail",
+            "content": "contact@zemnas.com",
+            "link": "mailto:contact@zemnas.com"
+          },
+          {
+            "title": "Connect",
+            "icon": "linkedin",
+            "content": "Follow us on LinkedIn",
+            "link": "https://www.linkedin.com/company/zemnas/"
+          },
+          {
+            "title": "Our Offices",
+            "offices": [
+              {
+                "city": "Missouri, USA",
+                "type": "Headquarters",
+                "address": "123 Business District",
+                "address_line_2": "St. Louis, MO 63101"
+              },
+              {
+                "city": "Germany",
+                "type": "European Office",
+                "address": "Musterstraße 45",
+                "address_line_2": "10115 Berlin"
+              }
+            ]
+          },
+          {
+            "type": "info_box",
+            "background": "rgba(241, 244, 249, 0.3)",
+            "content": "We typically respond within 24 hours during business days. For urgent matters, please mention it in your message."
+          }
+        ]
+      }
+    }
+  ]
+}

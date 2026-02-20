@@ -1,0 +1,260 @@
+{
+  "elementor_export": {
+    "version": "3.0",
+    "type": "page",
+    "page_name": "Work / Portfolio",
+    "page_title": "Our Work - Video Production Studio | Zemnas",
+    "meta_description": "High-retention, story-driven video editing for creators, brands, and startups that want results — not just views."
+  },
+
+  "page_settings": {
+    "template": "full_width",
+    "dark_theme": true,
+    "background": "#0f1419"
+  },
+
+  "sections": [
+    {
+      "id": "cinematic_hero",
+      "type": "hero_section",
+      "settings": {
+        "min_height": "100vh",
+        "background": "#0f1419",
+        "overflow": "hidden"
+      },
+      "background_elements": [
+        {
+          "type": "grain_texture",
+          "opacity": 0.03
+        },
+        {
+          "type": "video_grid",
+          "columns": 3,
+          "opacity": 0.2,
+          "images": ["project1.jpg", "project2.jpg", "project3.jpg", "project4.jpg", "project5.jpg", "project6.jpg"]
+        },
+        {
+          "type": "gradient_overlay",
+          "gradient": "linear-gradient(180deg, #0f1419 0%, rgba(15, 20, 25, 0.95) 50%, #0f1419 100%)"
+        },
+        {
+          "type": "glow_orb",
+          "position": "top-left",
+          "size": "384px",
+          "color": "rgba(26, 109, 204, 0.2)"
+        },
+        {
+          "type": "glow_orb",
+          "position": "bottom-right",
+          "size": "384px",
+          "color": "rgba(77, 147, 224, 0.2)"
+        }
+      ],
+      "content": {
+        "alignment": "center",
+        "max_width": "1024px",
+        "elements": [
+          {
+            "type": "badge",
+            "icon": "pulse_dot",
+            "text": "Video Production Studio",
+            "background": "rgba(26, 109, 204, 0.1)",
+            "border": "1px solid rgba(26, 109, 204, 0.2)",
+            "text_color": "#1a6dcc"
+          },
+          {
+            "type": "heading",
+            "tag": "h1",
+            "size": "5rem",
+            "content": {
+              "line_1": "We Don't Edit Videos.",
+              "line_2": "We Engineer Attention.",
+              "line_2_style": "gradient",
+              "gradient": "linear-gradient(90deg, #1a6dcc, #4d93e0, #1a6dcc)"
+            },
+            "color": "#f1f4f9"
+          },
+          {
+            "type": "paragraph",
+            "content": "High-retention, story-driven video editing for creators, brands, and startups that want results — not just views.",
+            "font_size": "1.5rem",
+            "color": "rgba(241, 244, 249, 0.7)"
+          },
+          {
+            "type": "button_group",
+            "buttons": [
+              {
+                "text": "View Our Work",
+                "type": "primary",
+                "icon": "arrow-right",
+                "scroll_to": "#portfolio"
+              },
+              {
+                "text": "Book a Call",
+                "type": "outline_light",
+                "url": "/contact"
+              }
+            ]
+          }
+        ]
+      },
+      "scroll_indicator": {
+        "type": "mouse_scroll",
+        "color": "rgba(241, 244, 249, 0.3)"
+      }
+    },
+
+    {
+      "id": "portfolio",
+      "type": "portfolio_section",
+      "settings": {
+        "padding": "5rem 0 8rem",
+        "background": "#fafbfc"
+      },
+      "header": {
+        "eyebrow": "Portfolio",
+        "title": "Work That Speaks for Itself"
+      },
+      "filter": {
+        "type": "category_pills",
+        "categories": [
+          {"id": "all", "label": "All"},
+          {"id": "vsl", "label": "VSLs"},
+          {"id": "longform", "label": "Long Form"},
+          {"id": "hooks", "label": "Hooks"},
+          {"id": "intros", "label": "Intros / Outros"},
+          {"id": "youtube", "label": "YouTube Creators"},
+          {"id": "brand", "label": "Brand Videos"}
+        ]
+      },
+      "featured_projects": [
+        {
+          "id": "vsl-coaching-empire",
+          "title": "High-Converting VSL That Scaled to $2M/month",
+          "client": "Alex Thompson",
+          "client_type": "Coach",
+          "category": "vsl",
+          "goal": "Sales",
+          "thumbnail": "video-campaign.jpg",
+          "description": "A 45-minute Video Sales Letter that became the backbone of a coaching empire.",
+          "problem": "Alex had amazing content but his sales videos felt like lectures. Prospects dropped off within the first 2 minutes.",
+          "solution": "We engineered a story-driven VSL with pattern interrupts every 45 seconds, strategic B-roll, and emotional peaks timed to pricing reveals.",
+          "editing_strategy": "Hook → Curiosity Loop → Pain Amplification → Solution Bridge → Social Proof Stack → Urgency Close. Every cut was intentional.",
+          "results": [
+            {"metric": "Watch Time", "value": "78%"},
+            {"metric": "Conversion Rate", "value": "12.4%"},
+            {"metric": "Revenue", "value": "$2M/mo"}
+          ]
+        },
+        {
+          "id": "youtube-growth-engine",
+          "title": "From 10K to 500K Subscribers in 8 Months",
+          "client": "Mike Chen",
+          "client_type": "Creator",
+          "category": "youtube",
+          "goal": "Growth",
+          "thumbnail": "brand-project.jpg",
+          "description": "Complete channel transformation with retention-optimized editing.",
+          "problem": "Mike's videos were 30+ minutes but average view duration was under 4 minutes. The algorithm buried his content.",
+          "solution": "We restructured his content with hook-driven intros, visual variety every 8 seconds, and strategic chapter breaks that kept viewers hooked.",
+          "results": [
+            {"metric": "Avg. Retention", "value": "62%"},
+            {"metric": "Subscribers", "value": "500K"},
+            {"metric": "Views/Month", "value": "4.2M"}
+          ]
+        },
+        {
+          "id": "saas-product-launch",
+          "title": "Product Launch That Broke Records",
+          "client": "FlowStack",
+          "client_type": "Startup",
+          "category": "brand",
+          "goal": "Awareness",
+          "thumbnail": "ai-platform.jpg",
+          "description": "A cinematic product video that made enterprise software feel exciting.",
+          "results": [
+            {"metric": "Video Views", "value": "2.1M"},
+            {"metric": "Sign-ups", "value": "15K"},
+            {"metric": "PR Features", "value": "12"}
+          ]
+        }
+      ],
+      "hooks_wall": {
+        "title": "The Hooks Wall",
+        "subtitle": "Scroll-stopping openers that make viewers stay",
+        "layout": "masonry_grid",
+        "columns": 4,
+        "items": [
+          {"title": "Stop Scrolling Hook", "type": "Pattern interrupt"},
+          {"title": "Curiosity Loop Hook", "type": "Open loop technique"},
+          {"title": "Controversy Hook", "type": "Bold statement opener"},
+          {"title": "Before/After Hook", "type": "Transformation reveal"}
+        ]
+      }
+    },
+
+    {
+      "id": "process",
+      "type": "process_section",
+      "settings": {
+        "padding": "5rem 0",
+        "background": "rgba(241, 244, 249, 0.5)"
+      },
+      "header": {
+        "eyebrow": "Our Process",
+        "title": "How We Engineer Attention"
+      },
+      "steps": [
+        {
+          "icon": "clapperboard",
+          "title": "Script & Story Breakdown",
+          "description": "We analyze your script for narrative hooks, pacing opportunities, and emotional beats."
+        },
+        {
+          "icon": "zap",
+          "title": "Hook Engineering",
+          "description": "Craft the first 3 seconds to stop thumbs and demand attention."
+        },
+        {
+          "icon": "film",
+          "title": "Retention Editing",
+          "description": "Strategic cuts, B-roll, and visual variety to keep viewers locked in."
+        },
+        {
+          "icon": "sparkles",
+          "title": "Motion + Sound Design",
+          "description": "Custom graphics, transitions, and audio that elevate production value."
+        },
+        {
+          "icon": "check-circle",
+          "title": "Final Polish",
+          "description": "Color grading, audio mastering, and platform optimization."
+        }
+      ]
+    },
+
+    {
+      "id": "stats",
+      "type": "stats_section",
+      "settings": {
+        "padding": "4rem 0",
+        "background": "#0f1419"
+      },
+      "stats": [
+        {"value": "100+", "label": "Long form videos edited", "icon": "video"},
+        {"value": "1000+", "label": "Hooks produced", "icon": "zap"},
+        {"value": "5+", "label": "Countries served", "icon": "globe"},
+        {"value": "$10M+", "label": "Revenue generated for clients", "icon": "trending-up"}
+      ]
+    }
+  ],
+
+  "case_study_modal": {
+    "type": "fullscreen_modal",
+    "background": "rgba(15, 20, 25, 0.95)",
+    "content_layout": {
+      "video_player": "top",
+      "info_sections": ["problem", "solution", "editing_strategy", "results"]
+    }
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "elementor_export": {
+    "version": "3.0",
+    "type": "global_components",
+    "export_date": "2024",
+    "site_name": "Zemnas"
+  },
+  
+  "design_system": {
+    "colors": {
+      "light_mode": {
+        "background": "#fafbfc",
+        "foreground": "#0f1419",
+        "card": "#ffffff",
+        "primary": "#1a6dcc",
+        "primary_glow": "#4d93e0",
+        "secondary": "#f1f4f9",
+        "muted": "#e8ecf1",
+        "muted_foreground": "#687076",
+        "accent": "#1a6dcc",
+        "border": "#dde2e8",
+        "destructive": "#dc2626"
+      },
+      "dark_mode": {
+        "background": "#0a0d11",
+        "foreground": "#f1f4f9",
+        "card": "#11151b",
+        "primary": "#4d93e0",
+        "primary_glow": "#6aa8eb",
+        "secondary": "#1a1f28",
+        "muted": "#222832",
+        "muted_foreground": "#8490a0",
+        "accent": "#4d93e0",
+        "border": "#252c38",
+        "destructive": "#7f1d1d"
+      }
+    },
+    "typography": {
+      "font_display": "Playfair Display",
+      "font_body": "Plus Jakarta Sans",
+      "heading_1": {
+        "font_family": "Playfair Display",
+        "font_size": "clamp(2.25rem, 5vw, 3.75rem)",
+        "font_weight": "600",
+        "line_height": "1.1",
+        "letter_spacing": "-0.025em"
+      },
+      "heading_2": {
+        "font_family": "Playfair Display",
+        "font_size": "clamp(1.875rem, 4vw, 2.5rem)",
+        "font_weight": "600",
+        "line_height": "1.15",
+        "letter_spacing": "-0.025em"
+      },
+      "heading_3": {
+        "font_family": "Playfair Display",
+        "font_size": "clamp(1.25rem, 2vw, 1.5rem)",
+        "font_weight": "500",
+        "line_height": "1.2"
+      },
+      "body": {
+        "font_family": "Plus Jakarta Sans",
+        "font_size": "16px",
+        "line_height": "1.6"
+      }
+    },
+    "spacing": {
+      "section_padding_large": "8rem 0",
+      "section_padding_medium": "5rem 0",
+      "section_padding_small": "3rem 0",
+      "container_max_width": "1280px",
+      "container_padding": "1.5rem"
+    },
+    "shadows": {
+      "sm": "0 1px 2px rgba(15, 20, 25, 0.04), 0 1px 3px rgba(15, 20, 25, 0.06)",
+      "md": "0 4px 6px rgba(15, 20, 25, 0.04), 0 2px 4px rgba(15, 20, 25, 0.06)",
+      "lg": "0 10px 25px rgba(15, 20, 25, 0.06), 0 4px 10px rgba(15, 20, 25, 0.04)",
+      "xl": "0 20px 40px rgba(15, 20, 25, 0.08), 0 8px 16px rgba(15, 20, 25, 0.04)",
+      "glow": "0 0 30px rgba(26, 109, 204, 0.15)"
+    },
+    "border_radius": {
+      "sm": "0.375rem",
+      "md": "0.625rem",
+      "lg": "1rem",
+      "xl": "1.5rem",
+      "full": "9999px"
+    }
+  },
+
+  "header": {
+    "type": "template",
+    "widget_type": "header",
+    "settings": {
+      "layout": "horizontal",
+      "sticky": true,
+      "background": "rgba(250, 251, 252, 0.8)",
+      "backdrop_filter": "blur(12px)",
+      "border_bottom": "1px solid #dde2e8",
+      "height": "80px",
+      "z_index": "50"
+    },
+    "structure": {
+      "container": {
+        "max_width": "1280px",
+        "padding": "0 1.5rem",
+        "display": "flex",
+        "justify_content": "space-between",
+        "align_items": "center"
+      }
+    },
+    "elements": {
+      "logo": {
+        "type": "image_text_combo",
+        "image": {
+          "src": "zemnas-logo.png",
+          "alt": "Zemnas Logo",
+          "width": "32px",
+          "height": "32px"
+        },
+        "text": {
+          "content": "Zemnas",
+          "font_family": "Plus Jakarta Sans",
+          "font_size": "1.5rem",
+          "font_weight": "600",
+          "color": "#0f1419",
+          "letter_spacing": "-0.025em"
+        },
+        "link": "/"
+      },
+      "navigation": {
+        "type": "mega_menu",
+        "items": [
+          {
+            "label": "Home",
+            "url": "/",
+            "has_dropdown": false
+          },
+          {
+            "label": "Services",
+            "url": "#",
+            "has_dropdown": true,
+            "dropdown": {
+              "type": "simple_list",
+              "width": "280px",
+              "items": [
+                {
+                  "title": "Creative & Marketing Studio",
+                  "description": "Video, design, motion, and visual storytelling",
+                  "url": "/services/creative"
+                },
+                {
+                  "title": "Digital Marketing & Growth",
+                  "description": "B2B marketing, funnels, lead generation",
+                  "url": "/services/marketing"
+                },
+                {
+                  "title": "Software & AI Solutions",
+                  "description": "Custom software, AI development, automation",
+                  "url": "/services/software"
+                },
+                {
+                  "title": "Managed Services",
+                  "description": "Ongoing digital and technology support",
+                  "url": "/services/managed"
+                }
+              ]
+            }
+          },
+          {
+            "label": "About",
+            "url": "/about",
+            "has_dropdown": false
+          },
+          {
+            "label": "Work",
+            "url": "/work",
+            "has_dropdown": false
+          },
+          {
+            "label": "Insights",
+            "url": "/insights",
+            "has_dropdown": false
+          },
+          {
+            "label": "Contact",
+            "url": "/contact",
+            "has_dropdown": false
+          }
+        ],
+        "style": {
+          "font_family": "Plus Jakarta Sans",
+          "font_size": "14px",
+          "font_weight": "500",
+          "color": "#687076",
+          "hover_color": "#0f1419",
+          "gap": "0.25rem",
+          "padding": "0.5rem 1rem"
+        }
+      },
+      "cta_button": {
+        "type": "button",
+        "text": "Start a Conversation",
+        "url": "/contact",
+        "style": {
+          "background": "#1a6dcc",
+          "color": "#ffffff",
+          "padding": "0.625rem 1.25rem",
+          "border_radius": "0.375rem",
+          "font_size": "14px",
+          "font_weight": "500",
+          "hover_background": "rgba(26, 109, 204, 0.9)"
+        }
+      },
+      "theme_toggle": {
+        "type": "toggle",
+        "icon_light": "sun",
+        "icon_dark": "moon",
+        "size": "20px"
+      },
+      "mobile_menu": {
+        "type": "hamburger_menu",
+        "breakpoint": "1024px",
+        "icon_size": "20px",
+        "animation": "slide_from_right"
+      }
+    }
+  },
+
+  "footer": {
+    "type": "template",
+    "widget_type": "footer",
+    "settings": {
+      "background": "rgba(241, 244, 249, 0.3)",
+      "border_top": "1px solid #dde2e8",
+      "padding": "3rem 0 4rem"
+    },
+    "structure": {
+      "grid": {
+        "columns": "1fr 1fr 1fr 1fr",
+        "gap": "2rem 3rem",
+        "mobile_columns": "1fr"
+      }
+    },
+    "elements": {
+      "brand_column": {
+        "logo": {
+          "src": "zemnas-logo.png",
+          "width": "40px",
+          "text": "Zemnas",
+          "font_size": "1.5rem"
+        },
+        "description": "Your digital partner for creative, marketing, software, and AI solutions.",
+        "contact_info": [
+          {
+            "icon": "mail",
+            "text": "contact@zemnas.com",
+            "url": "mailto:contact@zemnas.com"
+          },
+          {
+            "icon": "linkedin",
+            "text": "LinkedIn",
+            "url": "https://www.linkedin.com/company/zemnas/"
+          }
+        ]
+      },
+      "services_column": {
+        "title": "Services",
+        "links": [
+          {"text": "Creative & Marketing Studio", "url": "/services/creative"},
+          {"text": "Digital Marketing & Growth", "url": "/services/marketing"},
+          {"text": "Software & AI Solutions", "url": "/services/software"},
+          {"text": "Managed Services", "url": "/services/managed"}
+        ]
+      },
+      "company_column": {
+        "title": "Company",
+        "links": [
+          {"text": "About", "url": "/about"},
+          {"text": "Work", "url": "/work"},
+          {"text": "Insights", "url": "/insights"},
+          {"text": "Contact", "url": "/contact"}
+        ]
+      },
+      "newsletter_column": {
+        "title": "Stay Updated",
+        "description": "Get insights on digital growth delivered to your inbox.",
+        "form": {
+          "type": "newsletter_signup",
+          "placeholder": "Enter your email",
+          "button_text": "Subscribe",
+          "button_icon": "arrow-right"
+        }
+      },
+      "bottom_bar": {
+        "copyright": "© 2024 Zemnas. All rights reserved.",
+        "links": [
+          {"text": "Privacy Policy", "url": "/privacy"},
+          {"text": "Terms of Service", "url": "/terms"}
+        ]
+      }
+    }
+  }
+}

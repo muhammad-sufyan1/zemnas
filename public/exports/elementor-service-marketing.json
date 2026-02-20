@@ -1,0 +1,136 @@
+{
+  "elementor_export": {
+    "version": "3.0",
+    "type": "service_page",
+    "page_name": "Digital Marketing & Growth",
+    "page_title": "Marketing Engine - B2B Growth, Funnels & Demand Generation | Zemnas",
+    "meta_description": "Marketing infrastructure that generates pipeline. B2B marketing strategies, conversion funnels, and performance campaigns."
+  },
+
+  "sections": [
+    {
+      "id": "hero",
+      "type": "editorial_hero",
+      "settings": {
+        "min_height": "70vh"
+      },
+      "background_elements": [
+        {"type": "canvas_dot_animation", "dot_count": 25}
+      ],
+      "content": {
+        "badge": {"text": "Marketing Engine"},
+        "heading": {
+          "line_1": "Marketing infrastructure",
+          "line_2": "that generates pipeline.",
+          "line_2_color": "#687076"
+        },
+        "subtitle": "B2B marketing strategies, conversion funnels, and performance campaigns that drive measurable growth."
+      }
+    },
+
+    {
+      "id": "system_visual",
+      "type": "visual_diagram",
+      "settings": {
+        "padding": "4rem 0"
+      },
+      "content": {
+        "title": "The Growth System",
+        "diagram_type": "funnel_visualization",
+        "stages": ["Awareness", "Interest", "Consideration", "Decision", "Retention"]
+      }
+    },
+
+    {
+      "id": "modules",
+      "type": "alternating_modules",
+      "header": {
+        "eyebrow": "What we build",
+        "title": "Full-funnel marketing capabilities"
+      },
+      "modules": [
+        {
+          "number": "01",
+          "title": "Demand Generation",
+          "description": "Multi-channel campaigns that fill your pipeline with qualified leads through strategic content, paid media, and automation.",
+          "link": "/services/marketing/demand-generation"
+        },
+        {
+          "number": "02",
+          "title": "Funnels & Landing Pages",
+          "description": "High-converting landing pages and lead funnels optimized for maximum conversion at every stage.",
+          "link": "/services/marketing/funnels-landing-pages"
+        },
+        {
+          "number": "03",
+          "title": "Website Infrastructure",
+          "description": "Marketing-ready websites built for performance, SEO, and conversion with analytics baked in.",
+          "link": "/services/marketing/website-infrastructure"
+        },
+        {
+          "number": "04",
+          "title": "Performance Optimization",
+          "description": "Continuous testing, analytics, and optimization to improve ROI across all marketing channels.",
+          "link": "/services/marketing/performance-optimization"
+        }
+      ]
+    },
+
+    {
+      "id": "timeline",
+      "type": "process_timeline",
+      "header": {
+        "eyebrow": "Our Process",
+        "title": "From strategy to scale"
+      },
+      "steps": [
+        {"title": "Audit & Analysis", "description": "Deep dive into your current marketing stack and performance"},
+        {"title": "Strategy Development", "description": "Building a roadmap aligned with your revenue goals"},
+        {"title": "Implementation", "description": "Executing campaigns with continuous optimization"},
+        {"title": "Scale & Iterate", "description": "Expanding what works and testing new opportunities"}
+      ]
+    },
+
+    {
+      "id": "engagements",
+      "type": "engagement_models",
+      "header": {
+        "title": "How we work together"
+      },
+      "models": [
+        {
+          "title": "Project-Based",
+          "description": "Specific campaigns or initiatives with defined scope and timeline",
+          "ideal_for": "Launch campaigns, website redesigns, funnel builds"
+        },
+        {
+          "title": "Retainer",
+          "description": "Ongoing marketing partnership with dedicated resources",
+          "ideal_for": "Continuous growth, multiple campaigns, long-term optimization"
+        },
+        {
+          "title": "Consulting",
+          "description": "Strategic guidance for internal teams",
+          "ideal_for": "Teams that need direction but handle execution"
+        }
+      ]
+    },
+
+    {
+      "id": "bridge",
+      "type": "bridge_section",
+      "content": {
+        "title": "Marketing powered by technology",
+        "subtitle": "Our marketing work integrates seamlessly with custom software and AI solutions.",
+        "cta": {"text": "Explore Software & AI", "url": "/services/software"}
+      }
+    }
+  ],
+
+  "sub_pages": [
+    {"slug": "demand-generation", "title": "Demand Generation"},
+    {"slug": "funnels-landing-pages", "title": "Funnels & Landing Pages"},
+    {"slug": "website-infrastructure", "title": "Website Infrastructure"},
+    {"slug": "performance-optimization", "title": "Performance Optimization"}
+  ]
+}

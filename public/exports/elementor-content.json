@@ -1,0 +1,559 @@
+{
+  "version": "1.0.0",
+  "title": "Zemnas Creative Studio - Complete Website Export",
+  "exported_at": "2025-01-21",
+  "site_settings": {
+    "site_name": "Zemnas Creative Studio",
+    "tagline": "Creative. Marketing. Software. AI.",
+    "logo": "src/assets/zemnas-logo.png",
+    "primary_email": "hello@zemnas.com",
+    "social": {
+      "linkedin": "https://linkedin.com/company/zemnas"
+    }
+  },
+  "design_system": {
+    "colors": {
+      "primary": "hsl(215, 90%, 52%)",
+      "primary_foreground": "hsl(0, 0%, 100%)",
+      "secondary": "hsl(215, 15%, 95%)",
+      "background": "hsl(0, 0%, 100%)",
+      "foreground": "hsl(215, 25%, 12%)",
+      "muted": "hsl(215, 15%, 92%)",
+      "muted_foreground": "hsl(215, 15%, 50%)",
+      "accent": "hsl(265, 80%, 60%)",
+      "border": "hsl(215, 15%, 90%)",
+      "card": "hsl(0, 0%, 100%)"
+    },
+    "typography": {
+      "font_display": "serif",
+      "font_body": "sans-serif",
+      "heading_sizes": {
+        "h1": "clamp(2.5rem, 5vw, 4.5rem)",
+        "h2": "clamp(2rem, 4vw, 3.5rem)",
+        "h3": "clamp(1.5rem, 3vw, 2rem)",
+        "h4": "1.5rem"
+      }
+    }
+  },
+  "pages": {
+    "homepage": {
+      "title": "Home - Zemnas Creative Studio",
+      "meta_description": "We build the systems behind ambitious growth. Creative, Marketing, Software & AI - four disciplines, one integrated approach.",
+      "sections": [
+        {
+          "type": "hero",
+          "id": "hero_section",
+          "content": {
+            "eyebrow": {
+              "text": "Digital Systems That Scale",
+              "has_indicator": true
+            },
+            "headline": {
+              "line1": "We build the systems behind",
+              "line2": "ambitious growth.",
+              "line2_style": "primary_color"
+            },
+            "subheadline": "Creative. Marketing. Software. AI. Four disciplines, one integrated approach—transforming how businesses connect, convert, and scale.",
+            "cta_primary": {
+              "text": "View Our Work",
+              "link": "/work"
+            },
+            "cta_secondary": {
+              "text": "Start a Project",
+              "link": "/contact"
+            },
+            "trust_text": "Trusted by forward-thinking companies",
+            "client_logos": ["Placeholder 1", "Placeholder 2", "Placeholder 3"]
+          },
+          "design": {
+            "background": "gradient",
+            "gradient": "from-background via-background to-surface-subtle",
+            "has_animated_blurs": true,
+            "has_scroll_indicator": true
+          }
+        },
+        {
+          "type": "services_grid",
+          "id": "service_pillars",
+          "content": {
+            "eyebrow": "Our Capabilities",
+            "headline": "Four pillars of growth",
+            "subheadline": "An integrated approach where creative, marketing, software, and operations work together—not in silos.",
+            "services": [
+              {
+                "icon": "Palette",
+                "title": "Creative Studio",
+                "subtitle": "Design & Production",
+                "description": "Video, motion graphics, brand identity, and visual storytelling that captures attention and communicates your value.",
+                "link": "/services/creative",
+                "capabilities": ["Explainer Videos", "Motion Design", "Brand Systems", "UI/UX"]
+              },
+              {
+                "icon": "TrendingUp",
+                "title": "Marketing Engine",
+                "subtitle": "Growth & Demand",
+                "description": "B2B marketing strategies, conversion funnels, and performance campaigns that drive measurable pipeline growth.",
+                "link": "/services/marketing",
+                "capabilities": ["Demand Gen", "Funnels", "SEO/SEM", "Analytics"]
+              },
+              {
+                "icon": "Code2",
+                "title": "Software & AI",
+                "subtitle": "Build & Automate",
+                "description": "Custom software, AI integration, workflow automation, and intelligent systems designed for your specific needs.",
+                "link": "/services/software",
+                "capabilities": ["Custom Apps", "AI Tools", "Automation", "APIs"]
+              },
+              {
+                "icon": "Settings",
+                "title": "Managed Services",
+                "subtitle": "Support & Scale",
+                "description": "Ongoing digital support, maintenance, and optimization to keep your systems running at peak performance.",
+                "link": "/services/managed",
+                "capabilities": ["24/7 Support", "Updates", "Monitoring", "Optimization"]
+              }
+            ]
+          },
+          "design": {
+            "background": "surface-subtle",
+            "layout": "2x2_grid",
+            "card_style": "bordered_with_hover_gradient"
+          }
+        },
+        {
+          "type": "principles",
+          "id": "how_we_think",
+          "content": {
+            "eyebrow": "Our Philosophy",
+            "headline": "How Zemnas thinks",
+            "subheadline": "Our approach is built on principles that guide every project from discovery to delivery.",
+            "principles": [
+              {
+                "step": "01",
+                "icon": "Lightbulb",
+                "title": "Strategy before execution",
+                "description": "Every project begins with understanding your goals, audience, and market. We align every decision with measurable outcomes."
+              },
+              {
+                "step": "02",
+                "icon": "Target",
+                "title": "Design aligned with performance",
+                "description": "Beautiful isn't enough. Our creative work is built to convert, engage, and drive the metrics that matter to your business."
+              },
+              {
+                "step": "03",
+                "icon": "Wrench",
+                "title": "Technology with real use cases",
+                "description": "We don't build for the sake of innovation. Every tool, system, and integration solves a specific problem you face."
+              },
+              {
+                "step": "04",
+                "icon": "Handshake",
+                "title": "Long-term partnership mindset",
+                "description": "We're not here for one project. We build relationships that grow with your business and evolve with your needs."
+              }
+            ]
+          },
+          "design": {
+            "layout": "vertical_timeline",
+            "has_connecting_line": true
+          }
+        },
+        {
+          "type": "live_projects_strip",
+          "id": "capability_strip",
+          "content": {
+            "headline": "What we're building right now",
+            "subheadline": "Current projects in motion across creative, marketing, and technology.",
+            "projects": [
+              {
+                "label": "SaaS explainer for a growth-stage startup",
+                "gradient": "primary",
+                "link": "/services/creative"
+              },
+              {
+                "label": "AI workflow automation for internal ops",
+                "gradient": "violet",
+                "link": "/services/software"
+              },
+              {
+                "label": "Product UI redesign for scale readiness",
+                "gradient": "cyan",
+                "link": "/services/creative"
+              },
+              {
+                "label": "B2B demand system for a services company",
+                "gradient": "amber",
+                "link": "/services/marketing"
+              },
+              {
+                "label": "Brand & content system for a new launch",
+                "gradient": "emerald",
+                "link": "/services/creative"
+              },
+              {
+                "label": "Analytics dashboard for data-driven teams",
+                "gradient": "rose",
+                "link": "/services/software"
+              }
+            ]
+          },
+          "design": {
+            "layout": "infinite_horizontal_scroll",
+            "animation": "30s_linear_infinite",
+            "pause_on_hover": true
+          }
+        },
+        {
+          "type": "ai_section",
+          "id": "future_ready",
+          "content": {
+            "badge": "AI & Innovation",
+            "headline": "Built for what's next",
+            "description": "The landscape is shifting. AI, automation, and intelligent systems are redefining what's possible. Zemnas helps you navigate this evolution, integrating cutting-edge technology that delivers real business value today while preparing you for tomorrow.",
+            "cta": {
+              "text": "Explore AI & Software",
+              "link": "/services/software"
+            }
+          },
+          "design": {
+            "background": "gradient_with_neural_network_canvas",
+            "has_animated_nodes": true
+          }
+        },
+        {
+          "type": "testimonials",
+          "id": "trust_section",
+          "content": {
+            "client_logos": ["TechCorp", "InnovateLab", "FutureScale", "DataDriven", "CloudFirst", "AIVentures"],
+            "testimonials": [
+              {
+                "quote": "Zemnas transformed our digital presence. Their strategic approach and attention to detail exceeded our expectations.",
+                "author": "Sarah Chen",
+                "role": "CEO, TechVentures",
+                "avatar": "SC"
+              },
+              {
+                "quote": "Working with Zemnas felt like having an in-house team. They understood our vision and delivered beyond what we imagined.",
+                "author": "Marcus Johnson",
+                "role": "Founder, GrowthLab",
+                "avatar": "MJ"
+              },
+              {
+                "quote": "The AI integration they built saved us 40 hours a week. The ROI was immediate and continues to grow.",
+                "author": "Elena Rodriguez",
+                "role": "COO, DataFlow Inc",
+                "avatar": "ER"
+              },
+              {
+                "quote": "From creative to execution, Zemnas delivered a cohesive brand experience that truly resonates with our audience.",
+                "author": "David Park",
+                "role": "Marketing Director, Elevate",
+                "avatar": "DP"
+              }
+            ]
+          },
+          "design": {
+            "layout": "carousel",
+            "auto_play": true,
+            "interval": "5000ms"
+          }
+        },
+        {
+          "type": "cta",
+          "id": "final_cta",
+          "content": {
+            "eyebrow": "Ready to Start?",
+            "headline": "Let's see if Zemnas is the right fit",
+            "subheadline": "No pressure. No obligations. Just a conversation about your goals and how we might help you achieve them.",
+            "cta_primary": {
+              "text": "Book a Discovery Call",
+              "icon": "Calendar",
+              "link": "/contact"
+            },
+            "cta_secondary": {
+              "text": "hello@zemnas.com",
+              "icon": "Mail",
+              "link": "mailto:hello@zemnas.com"
+            },
+            "trust_note": "Typically respond within 24 hours"
+          },
+          "design": {
+            "background": "surface-subtle_with_blurs"
+          }
+        }
+      ]
+    },
+    "work_portfolio": {
+      "title": "Work - Zemnas Creative Studio",
+      "meta_description": "High-retention, story-driven video editing for creators, brands, and startups that want results — not just views.",
+      "sections": [
+        {
+          "type": "cinematic_hero",
+          "id": "work_hero",
+          "content": {
+            "badge": "Video Production Studio",
+            "headline": {
+              "line1": "We Don't Edit Videos.",
+              "line2": "We Engineer Attention.",
+              "line2_style": "gradient_text"
+            },
+            "subheadline": "High-retention, story-driven video editing for creators, brands, and startups that want results — not just views.",
+            "cta_primary": {
+              "text": "View Our Work",
+              "action": "scroll_to_portfolio"
+            },
+            "cta_secondary": {
+              "text": "Book a Call",
+              "link": "/contact"
+            }
+          },
+          "design": {
+            "background": "dark_with_grain_texture",
+            "has_video_montage_background": true,
+            "has_glow_effects": true
+          }
+        },
+        {
+          "type": "portfolio_filter",
+          "id": "portfolio_nav",
+          "content": {
+            "eyebrow": "Portfolio",
+            "headline": "Work That Speaks for Itself",
+            "categories": [
+              {"id": "all", "label": "All"},
+              {"id": "vsl", "label": "VSLs"},
+              {"id": "longform", "label": "Long Form"},
+              {"id": "hooks", "label": "Hooks"},
+              {"id": "intros", "label": "Intros / Outros"},
+              {"id": "youtube", "label": "YouTube Creators"},
+              {"id": "brand", "label": "Brand Videos"}
+            ]
+          }
+        },
+        {
+          "type": "portfolio_grid",
+          "id": "projects",
+          "content": {
+            "projects": [
+              {
+                "id": "vsl-coaching-empire",
+                "title": "High-Converting VSL That Scaled to $2M/month",
+                "client": "Alex Thompson",
+                "client_type": "Coach",
+                "category": "vsl",
+                "goal": "Sales",
+                "thumbnail": "src/assets/work/video-campaign.jpg",
+                "description": "A 45-minute Video Sales Letter that became the backbone of a coaching empire.",
+                "problem": "Alex had amazing content but his sales videos felt like lectures. Prospects dropped off within the first 2 minutes.",
+                "solution": "We engineered a story-driven VSL with pattern interrupts every 45 seconds, strategic B-roll, and emotional peaks timed to pricing reveals.",
+                "editing_strategy": "Hook → Curiosity Loop → Pain Amplification → Solution Bridge → Social Proof Stack → Urgency Close. Every cut was intentional.",
+                "results": [
+                  {"metric": "Watch Time", "value": "78%"},
+                  {"metric": "Conversion Rate", "value": "12.4%"},
+                  {"metric": "Revenue", "value": "$2M/mo"}
+                ],
+                "featured": true
+              },
+              {
+                "id": "youtube-growth-engine",
+                "title": "From 10K to 500K Subscribers in 8 Months",
+                "client": "Mike Chen",
+                "client_type": "Creator",
+                "category": "youtube",
+                "goal": "Growth",
+                "thumbnail": "src/assets/work/brand-project.jpg",
+                "description": "Complete channel transformation with retention-optimized editing.",
+                "problem": "Mike's videos were 30+ minutes but average view duration was under 4 minutes. The algorithm buried his content.",
+                "solution": "We restructured his content with hook-driven intros, visual variety every 8 seconds, and strategic chapter breaks that kept viewers hooked.",
+                "editing_strategy": "Cold open hook → Payoff preview → Value stacking with visual anchors → Pattern disrupts → Satisfying conclusion loops.",
+                "results": [
+                  {"metric": "Avg. Retention", "value": "62%"},
+                  {"metric": "Subscribers", "value": "500K"},
+                  {"metric": "Views/Month", "value": "4.2M"}
+                ],
+                "featured": true
+              },
+              {
+                "id": "saas-product-launch",
+                "title": "Product Launch That Broke Records",
+                "client": "FlowStack",
+                "client_type": "Startup",
+                "category": "brand",
+                "goal": "Awareness",
+                "thumbnail": "src/assets/work/ai-platform.jpg",
+                "description": "A cinematic product video that made enterprise software feel exciting.",
+                "problem": "FlowStack's product demo was a screen recording with voiceover. It felt like a tutorial, not a revolution.",
+                "solution": "We created a cinematic experience with 3D motion graphics, dynamic UI animations, and a narrative that positioned them as category leaders.",
+                "editing_strategy": "Aspirational opening → Problem visualization → Product as hero → Feature storytelling → Social proof → Clear CTA.",
+                "results": [
+                  {"metric": "Video Views", "value": "2.1M"},
+                  {"metric": "Sign-ups", "value": "15K"},
+                  {"metric": "PR Features", "value": "12"}
+                ]
+              },
+              {
+                "id": "course-creator-vsl",
+                "title": "Course VSL with 18% Conversion",
+                "client": "Sarah Williams",
+                "client_type": "Coach",
+                "category": "vsl",
+                "goal": "Conversions",
+                "thumbnail": "src/assets/work/marketing-dashboard.jpg",
+                "description": "A masterclass in persuasion through visual storytelling.",
+                "problem": "Sarah's previous VSL converted at 3%. She was burning money on ads with thin margins.",
+                "solution": "Complete rebuild with testimonial integration, visual objection handling, and a pricing reveal sequence that felt like a gift.",
+                "editing_strategy": "Pattern interrupt opening → Story-driven credibility → Visual testimonial stack → Before/after montage → Scarcity build.",
+                "results": [
+                  {"metric": "Conversion", "value": "18%"},
+                  {"metric": "ROAS", "value": "8.2x"},
+                  {"metric": "Revenue", "value": "$890K"}
+                ]
+              },
+              {
+                "id": "podcast-clips",
+                "title": "Podcast Clips That Go Viral",
+                "client": "The Growth Show",
+                "client_type": "Creator",
+                "category": "hooks",
+                "goal": "Growth",
+                "thumbnail": "src/assets/work/ecommerce-platform.jpg",
+                "description": "Turning 2-hour podcasts into scroll-stopping clips.",
+                "problem": "The podcast had great guests but zero social presence. Long-form wasn't getting discovered.",
+                "solution": "We created a system to identify viral moments, add dynamic captions, and cut clips that demand attention in the first 0.5 seconds.",
+                "editing_strategy": "Peak moment extraction → Hook-first restructuring → Visual emphasis on key phrases → Trending audio integration.",
+                "results": [
+                  {"metric": "Avg. Views", "value": "250K"},
+                  {"metric": "Virals", "value": "12"},
+                  {"metric": "Podcast Growth", "value": "340%"}
+                ],
+                "is_hook": true
+              },
+              {
+                "id": "ecom-brand-content",
+                "title": "E-commerce UGC That Converts",
+                "client": "Vitality Supplements",
+                "client_type": "Brand",
+                "category": "brand",
+                "goal": "Sales",
+                "thumbnail": "src/assets/work/managed-services.jpg",
+                "description": "Product videos that feel native to the feed.",
+                "problem": "Their polished brand videos felt like ads. Skip rates were brutal.",
+                "solution": "We shifted to edited UGC-style content with authentic hooks, quick cuts, and testimonials that felt like friend recommendations.",
+                "editing_strategy": "Native-feeling hook → Quick problem/solution → Product in action → Trust signals → Soft CTA.",
+                "results": [
+                  {"metric": "CTR", "value": "4.8%"},
+                  {"metric": "ROAS", "value": "5.2x"},
+                  {"metric": "CPA Drop", "value": "-42%"}
+                ]
+              },
+              {
+                "id": "longform-documentary",
+                "title": "Brand Documentary Series",
+                "client": "EcoTech Solutions",
+                "client_type": "Startup",
+                "category": "longform",
+                "goal": "Awareness",
+                "thumbnail": "src/assets/work/managed-services.jpg",
+                "description": "4-part documentary series on sustainable technology.",
+                "problem": "Needed to establish thought leadership in a crowded sustainability space.",
+                "solution": "Documentary-style storytelling with cinematic B-roll, expert interviews, and emotional narrative arcs.",
+                "editing_strategy": "Cinematic opening → Expert positioning → Problem visualization → Solution journey → Hopeful conclusion.",
+                "results": [
+                  {"metric": "Total Views", "value": "1.8M"},
+                  {"metric": "Avg. Watch", "value": "18min"},
+                  {"metric": "Leads", "value": "2.4K"}
+                ],
+                "featured": true
+              }
+            ]
+          }
+        },
+        {
+          "type": "process_timeline",
+          "id": "work_process",
+          "content": {
+            "eyebrow": "Our Process",
+            "headline": "Every video is built to hold attention, not just look good.",
+            "steps": [
+              {
+                "icon": "Clapperboard",
+                "title": "Script & Story Breakdown",
+                "description": "We analyze your script for narrative hooks, pacing opportunities, and emotional beats."
+              },
+              {
+                "icon": "Zap",
+                "title": "Hook Engineering",
+                "description": "Craft the first 3 seconds to stop thumbs and demand attention."
+              },
+              {
+                "icon": "Film",
+                "title": "Retention Editing",
+                "description": "Strategic cuts, B-roll, and visual variety to keep viewers locked in."
+              },
+              {
+                "icon": "Sparkles",
+                "title": "Motion + Sound Design",
+                "description": "Custom graphics, transitions, and audio that elevate production value."
+              },
+              {
+                "icon": "CheckCircle2",
+                "title": "Final Polish",
+                "description": "Color grading, audio mastering, and platform optimization."
+              }
+            ]
+          }
+        },
+        {
+          "type": "stats",
+          "id": "work_stats",
+          "content": {
+            "eyebrow": "Proof",
+            "headline": "The Numbers Behind Our Work",
+            "stats": [
+              {"value": "100+", "label": "Long form videos edited", "icon": "Video"},
+              {"value": "1000+", "label": "Hooks produced", "icon": "Zap"},
+              {"value": "5+", "label": "Countries served", "icon": "Globe"},
+              {"value": "$10M+", "label": "Revenue generated for clients", "icon": "TrendingUp"}
+            ]
+          },
+          "design": {
+            "background": "dark",
+            "has_glow_effects": true
+          }
+        },
+        {
+          "type": "cta",
+          "id": "work_cta",
+          "content": {
+            "headline": {
+              "line1": "Ready to Make Your Content",
+              "line2": "Impossible to Ignore?",
+              "line2_style": "gradient_text"
+            },
+            "subheadline": "Let's talk about transforming your videos into attention-holding, conversion-driving assets.",
+            "cta_primary": {
+              "text": "Book a Call",
+              "link": "/contact"
+            },
+            "cta_secondary": {
+              "text": "Get a Quote",
+              "link": "/contact"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "images": {
+    "logo": "src/assets/zemnas-logo.png",
+    "work": {
+      "ai_platform": "src/assets/work/ai-platform.jpg",
+      "brand_project": "src/assets/work/brand-project.jpg",
+      "ecommerce_platform": "src/assets/work/ecommerce-platform.jpg",
+      "managed_services": "src/assets/work/managed-services.jpg",
+      "marketing_dashboard": "src/assets/work/marketing-dashboard.jpg",
+      "video_campaign": "src/assets/work/video-campaign.jpg"
+    }
+  }
+}

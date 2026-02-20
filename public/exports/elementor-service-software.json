@@ -1,0 +1,127 @@
+{
+  "elementor_export": {
+    "version": "3.0",
+    "type": "service_page",
+    "page_name": "Software & AI Solutions",
+    "page_title": "Software & AI - Custom Development, Automation & AI Integration | Zemnas",
+    "meta_description": "Custom software, AI integration, workflow automation, and intelligent systems designed for your specific needs."
+  },
+
+  "sections": [
+    {
+      "id": "hero",
+      "type": "editorial_hero",
+      "settings": {
+        "min_height": "70vh"
+      },
+      "background_elements": [
+        {"type": "canvas_dot_animation", "dot_count": 25}
+      ],
+      "content": {
+        "badge": {"text": "Software & AI"},
+        "heading": {
+          "line_1": "Technology built for",
+          "line_2": "real business problems.",
+          "line_2_color": "#687076"
+        },
+        "subtitle": "Custom software, AI integration, and workflow automation designed for your specific needs."
+      }
+    },
+
+    {
+      "id": "philosophy",
+      "type": "text_section",
+      "header": {
+        "eyebrow": "Our Approach",
+        "title": "We build what you actually need."
+      },
+      "content": {
+        "paragraphs": [
+          "Technology should solve problems, not create them. We start with your business challenges and work backward to the right solution.",
+          "Every line of code, every integration, every automation is designed to deliver measurable value."
+        ]
+      }
+    },
+
+    {
+      "id": "modules",
+      "type": "alternating_modules",
+      "header": {
+        "eyebrow": "What we build",
+        "title": "Full-stack technology capabilities"
+      },
+      "modules": [
+        {
+          "number": "01",
+          "title": "Custom Development",
+          "description": "Web applications, platforms, and tools built from scratch to your exact specifications.",
+          "link": "/services/software/custom-development"
+        },
+        {
+          "number": "02",
+          "title": "AI-Powered Tools",
+          "description": "Intelligent applications leveraging machine learning, NLP, and generative AI to automate complex tasks.",
+          "link": "/services/software/ai-powered-tools"
+        },
+        {
+          "number": "03",
+          "title": "Workflow Automation",
+          "description": "Connect your tools and automate repetitive processes to save time and reduce errors.",
+          "link": "/services/software/workflow-automation"
+        },
+        {
+          "number": "04",
+          "title": "Integration & APIs",
+          "description": "Connect disparate systems and build custom integrations that make your tech stack work as one.",
+          "link": "/services/software/integration-apis"
+        }
+      ]
+    },
+
+    {
+      "id": "use_cases",
+      "type": "use_case_grid",
+      "header": {
+        "title": "Problems we solve"
+      },
+      "cases": [
+        {"title": "Manual data entry", "solution": "Automated workflows"},
+        {"title": "Disconnected systems", "solution": "Custom integrations"},
+        {"title": "Repetitive analysis", "solution": "AI-powered insights"},
+        {"title": "Scaling bottlenecks", "solution": "Custom platforms"}
+      ]
+    },
+
+    {
+      "id": "timeline",
+      "type": "process_timeline",
+      "header": {
+        "eyebrow": "Our Process",
+        "title": "From discovery to deployment"
+      },
+      "steps": [
+        {"title": "Discovery", "description": "Understanding your business processes and pain points"},
+        {"title": "Architecture", "description": "Designing the technical solution and roadmap"},
+        {"title": "Development", "description": "Building with agile sprints and regular demos"},
+        {"title": "Launch & Support", "description": "Deployment with training and ongoing maintenance"}
+      ]
+    },
+
+    {
+      "id": "bridge",
+      "type": "bridge_section",
+      "content": {
+        "title": "Technology needs ongoing care",
+        "subtitle": "Our managed services ensure your systems stay optimized and secure.",
+        "cta": {"text": "Explore Managed Services", "url": "/services/managed"}
+      }
+    }
+  ],
+
+  "sub_pages": [
+    {"slug": "custom-development", "title": "Custom Development"},
+    {"slug": "ai-powered-tools", "title": "AI-Powered Tools"},
+    {"slug": "workflow-automation", "title": "Workflow Automation"},
+    {"slug": "integration-apis", "title": "Integration & APIs"}
+  ]
+}

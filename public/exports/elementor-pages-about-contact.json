@@ -1,0 +1,154 @@
+{
+  "version": "1.0.0",
+  "title": "Zemnas - About & Contact Pages Export",
+  "pages": {
+    "about": {
+      "title": "About - Zemnas Creative Studio",
+      "meta_description": "We're a team of strategists, designers, developers, and marketers who believe in building systems that actually work.",
+      "sections": [
+        {
+          "type": "hero",
+          "id": "about_hero",
+          "content": {
+            "badge": "About Zemnas",
+            "headline": "We're builders at heart.",
+            "subheadline": "A team of strategists, designers, developers, and marketers united by a shared belief: great work comes from great partnerships."
+          },
+          "design": {
+            "background": "dark_with_animated_dots",
+            "has_canvas_animation": true
+          }
+        },
+        {
+          "type": "story",
+          "id": "story_section",
+          "content": {
+            "eyebrow": "Our Story",
+            "headline": "Born from frustration",
+            "paragraphs": [
+              "We started Zemnas because we saw too many businesses struggle with fragmented digital efforts. Marketing teams working in silos from development. Creative agencies delivering beautiful work that didn't convert. Software shops building tools nobody used.",
+              "We believed there had to be a better way—an integrated approach where strategy, creativity, technology, and operations work together toward measurable outcomes.",
+              "Today, we partner with businesses that share our values: clarity over complexity, outcomes over activities, and long-term relationships over quick wins."
+            ]
+          }
+        },
+        {
+          "type": "values",
+          "id": "values_section",
+          "content": {
+            "headline": "What we believe",
+            "values": [
+              {
+                "icon": "Target",
+                "title": "Outcomes over outputs",
+                "description": "We measure success by the impact we create, not the deliverables we produce."
+              },
+              {
+                "icon": "Users",
+                "title": "Partnership over projects",
+                "description": "We invest in relationships that grow and evolve with your business."
+              },
+              {
+                "icon": "Lightbulb",
+                "title": "Clarity over complexity",
+                "description": "Simple solutions that work beat sophisticated ones that don't."
+              },
+              {
+                "icon": "Shield",
+                "title": "Trust over transactions",
+                "description": "We're honest about what's possible and transparent about our process."
+              }
+            ]
+          }
+        },
+        {
+          "type": "team",
+          "id": "team_section",
+          "content": {
+            "headline": "The people behind the work",
+            "subheadline": "A diverse team of thinkers, makers, and problem-solvers.",
+            "team_members": [
+              {
+                "name": "Team Member",
+                "role": "Creative Director",
+                "image": "placeholder"
+              },
+              {
+                "name": "Team Member",
+                "role": "Head of Marketing",
+                "image": "placeholder"
+              },
+              {
+                "name": "Team Member",
+                "role": "Lead Developer",
+                "image": "placeholder"
+              },
+              {
+                "name": "Team Member",
+                "role": "Operations",
+                "image": "placeholder"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact - Zemnas Creative Studio",
+      "meta_description": "Start a conversation about your next project. We typically respond within 24 hours.",
+      "sections": [
+        {
+          "type": "hero",
+          "id": "contact_hero",
+          "content": {
+            "badge": "Get in Touch",
+            "headline": "Let's start a conversation.",
+            "subheadline": "Whether you have a project in mind or just want to explore possibilities, we'd love to hear from you."
+          },
+          "design": {
+            "background": "dark_with_animated_dots",
+            "has_canvas_animation": true
+          }
+        },
+        {
+          "type": "contact_form",
+          "id": "contact_form",
+          "content": {
+            "headline": "Send us a message",
+            "fields": [
+              {"name": "name", "label": "Your Name", "type": "text", "required": true},
+              {"name": "email", "label": "Email Address", "type": "email", "required": true},
+              {"name": "company", "label": "Company", "type": "text", "required": false},
+              {"name": "message", "label": "How can we help?", "type": "textarea", "required": true}
+            ],
+            "submit_button": "Send Message"
+          }
+        },
+        {
+          "type": "contact_info",
+          "id": "contact_info",
+          "content": {
+            "email": {
+              "label": "Email",
+              "value": "hello@zemnas.com"
+            },
+            "social": {
+              "linkedin": "linkedin.com/company/zemnas"
+            },
+            "response_time": "We typically respond within 24 hours.",
+            "offices": [
+              {
+                "city": "San Francisco",
+                "country": "USA"
+              },
+              {
+                "city": "London",
+                "country": "UK"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "version": "1.0.0",
+  "title": "Zemnas - Managed Services Export",
+  "pages": {
+    "managed_main": {
+      "title": "Managed Services - Zemnas",
+      "url": "/services/managed",
+      "sections": [
+        {
+          "type": "hero",
+          "content": {
+            "badge": "Managed Services & Support",
+            "headline": "Always-on support for your digital systems.",
+            "subheadline": "Ongoing maintenance, optimization, and support to keep your systems running at peak performance."
+          }
+        },
+        {
+          "type": "philosophy",
+          "content": {
+            "lines": [
+              "We work quietly in the background so you can focus on what matters.",
+              "Proactive maintenance prevents problems before they happen.",
+              "Your success is our success—we're invested for the long term."
+            ]
+          }
+        },
+        {
+          "type": "support_areas",
+          "content": {
+            "headline": "What we manage",
+            "areas": [
+              {
+                "icon": "Palette",
+                "title": "Marketing & Creative Ops",
+                "description": "Ongoing creative production, content updates, and marketing asset management.",
+                "link": "/services/managed/marketing-creative-ops"
+              },
+              {
+                "icon": "Globe",
+                "title": "Website Maintenance",
+                "description": "Updates, security, performance optimization, and content changes.",
+                "link": "/services/managed/website-maintenance"
+              },
+              {
+                "icon": "Settings",
+                "title": "Technical Support",
+                "description": "System monitoring, troubleshooting, and technical issue resolution.",
+                "link": "/services/managed/technical-support"
+              },
+              {
+                "icon": "TrendingUp",
+                "title": "Ongoing Optimization",
+                "description": "Continuous improvement based on data and performance metrics.",
+                "link": "/services/managed/ongoing-optimization"
+              }
+            ]
+          }
+        },
+        {
+          "type": "flow",
+          "content": {
+            "headline": "How we work",
+            "steps": [
+              {"label": "Assess", "description": "Understanding your current systems and needs."},
+              {"label": "Stabilize", "description": "Fixing immediate issues and establishing baselines."},
+              {"label": "Support", "description": "Ongoing maintenance and responsive support."},
+              {"label": "Improve", "description": "Continuous optimization and enhancements."}
+            ]
+          }
+        },
+        {
+          "type": "editorial",
+          "content": {
+            "eyebrow": "When it makes sense",
+            "paragraphs": [
+              "Managed services are ideal for teams who value consistency, reliability, and a long-term partner who understands their systems.",
+              "Whether you're scaling quickly, maintaining complex infrastructure, or simply want to focus on your core work — having a dedicated team in the background makes a difference."
+            ]
+          }
+        },
+        {
+          "type": "closing",
+          "content": {
+            "headline": "Looking for steady, reliable support?",
+            "subheadline": "We work quietly in the background so your team can focus on what matters.",
+            "cta": {"text": "Start a conversation", "link": "/contact"}
+          }
+        }
+      ]
+    },
+    "sub_pages": {
+      "marketing_creative_ops": {
+        "title": "Marketing & Creative Ops - Managed Services",
+        "url": "/services/managed/marketing-creative-ops",
+        "hero": {
+          "headline": "Creative production, on demand.",
+          "subheadline": "Ongoing marketing and creative support without the overhead of a full in-house team."
+        },
+        "features": [
+          {"icon": "RefreshCw", "title": "Content Updates", "description": "Regular content refreshes to keep things current."},
+          {"icon": "Palette", "title": "Creative Production", "description": "Ongoing design and creative asset creation."},
+          {"icon": "Layout", "title": "Campaign Assets", "description": "Quick turnaround on marketing materials."},
+          {"icon": "FileText", "title": "Content Calendar", "description": "Managed content planning and execution."}
+        ],
+        "case_study": {
+          "client": "SaaS Company",
+          "challenge": "Marketing team overwhelmed with creative requests.",
+          "solution": "Dedicated creative ops team handling all routine creative production.",
+          "results": [
+            {"metric": "40hrs", "label": "Saved weekly"},
+            {"metric": "2-day", "label": "Turnaround"},
+            {"metric": "100%", "label": "On-brand"}
+          ]
+        },
+        "process": [
+          {"step": 1, "title": "Request Submission", "description": "Simple intake process for creative needs."},
+          {"step": 2, "title": "Prioritization", "description": "We organize and prioritize the queue."},
+          {"step": 3, "title": "Production", "description": "Expert execution of creative assets."},
+          {"step": 4, "title": "Review", "description": "Quality check and revisions."},
+          {"step": 5, "title": "Delivery", "description": "Polished assets delivered on time."}
+        ]
+      },
+      "website_maintenance": {
+        "title": "Website Maintenance - Managed Services",
+        "url": "/services/managed/website-maintenance",
+        "hero": {
+          "headline": "Keep your website running perfectly.",
+          "subheadline": "Proactive maintenance, security updates, and performance optimization."
+        },
+        "features": [
+          {"icon": "RefreshCw", "title": "Regular Updates", "description": "CMS, plugins, and security patches applied promptly."},
+          {"icon": "Shield", "title": "Security Monitoring", "description": "24/7 monitoring for threats and vulnerabilities."},
+          {"icon": "Zap", "title": "Performance Optimization", "description": "Speed improvements and Core Web Vitals optimization."},
+          {"icon": "Activity", "title": "Uptime Monitoring", "description": "Instant alerts if anything goes wrong."}
+        ],
+        "it_management": {
+          "headline": "IT Infrastructure Management",
+          "services": [
+            {"title": "Server Management", "description": "Complete server administration, monitoring, and maintenance."},
+            {"title": "Network Management", "description": "Network infrastructure, security, and performance optimization."},
+            {"title": "End-to-End IT Management", "description": "Full IT operations support from workstations to cloud infrastructure."}
+          ]
+        },
+        "case_study": {
+          "client": "Retail Brand",
+          "challenge": "Website downtime during peak sales periods.",
+          "solution": "Comprehensive maintenance plan with proactive monitoring.",
+          "results": [
+            {"metric": "99.99%", "label": "Uptime"},
+            {"metric": "-70%", "label": "Load time"},
+            {"metric": "0", "label": "Security incidents"}
+          ]
+        }
+      },
+      "technical_support": {
+        "title": "Technical Support - Managed Services",
+        "url": "/services/managed/technical-support",
+        "hero": {
+          "headline": "Expert support when you need it.",
+          "subheadline": "Responsive technical support and troubleshooting for your systems."
+        },
+        "features": [
+          {"icon": "MessageSquare", "title": "Responsive Support", "description": "Quick response times for technical issues."},
+          {"icon": "Search", "title": "Root Cause Analysis", "description": "Finding and fixing the underlying problems."},
+          {"icon": "FileText", "title": "Documentation", "description": "Clear documentation for your systems."},
+          {"icon": "GraduationCap", "title": "Training", "description": "Team training on your tools and systems."}
+        ],
+        "it_services": {
+          "headline": "IT Services Included",
+          "services": [
+            {"title": "Helpdesk Support", "description": "First-line support for common IT issues."},
+            {"title": "System Administration", "description": "Ongoing management of your IT infrastructure."},
+            {"title": "Managed IT Services", "description": "Complete IT outsourcing for peace of mind."}
+          ]
+        },
+        "case_study": {
+          "client": "Professional Services Firm",
+          "challenge": "In-house IT couldn't keep up with support requests.",
+          "solution": "Dedicated technical support team with SLA guarantees.",
+          "results": [
+            {"metric": "<2hr", "label": "Response time"},
+            {"metric": "95%", "label": "First-call resolution"},
+            {"metric": "4.9/5", "label": "Satisfaction"}
+          ]
+        }
+      },
+      "ongoing_optimization": {
+        "title": "Ongoing Optimization - Managed Services",
+        "url": "/services/managed/ongoing-optimization",
+        "hero": {
+          "headline": "Continuous improvement, always.",
+          "subheadline": "Data-driven optimization to keep improving performance over time."
+        },
+        "features": [
+          {"icon": "BarChart", "title": "Analytics Review", "description": "Regular analysis of performance data."},
+          {"icon": "TrendingUp", "title": "Conversion Optimization", "description": "Ongoing CRO to improve results."},
+          {"icon": "Search", "title": "SEO Maintenance", "description": "Technical SEO and content optimization."},
+          {"icon": "RefreshCw", "title": "Content Refresh", "description": "Keeping content relevant and performing."}
+        ],
+        "optimization_areas": [
+          {"title": "Data & Analytics", "description": "Comprehensive tracking and insights."},
+          {"title": "Conversion Rate Optimization", "description": "Testing and improving conversion points."},
+          {"title": "SEO Performance", "description": "Rankings, traffic, and technical health."},
+          {"title": "User Experience", "description": "Behavior analysis and UX improvements."}
+        ],
+        "case_study": {
+          "client": "E-commerce Brand",
+          "challenge": "Conversion rate stagnant despite traffic growth.",
+          "solution": "Systematic optimization program with monthly experiments.",
+          "results": [
+            {"metric": "+45%", "label": "Conversion rate"},
+            {"metric": "+62%", "label": "Revenue per visitor"},
+            {"metric": "24", "label": "Winning tests"}
+          ]
+        }
+      }
+    }
+  }
+}

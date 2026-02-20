@@ -1,0 +1,259 @@
+{
+  "version": "1.0.0",
+  "title": "Zemnas - Creative Services Export",
+  "pages": {
+    "creative_main": {
+      "title": "Creative Studio - Zemnas",
+      "url": "/services/creative",
+      "sections": [
+        {
+          "type": "editorial_hero",
+          "content": {
+            "badge": "Creative & Production Studio",
+            "headline": "We design what the world notices.",
+            "subheadline": "Brand identities, motion design, video production, and digital experiences that capture attention and communicate value."
+          }
+        },
+        {
+          "type": "philosophy",
+          "content": {
+            "lines": [
+              "Great creative work isn't about decoration—it's about communication.",
+              "Every visual decision we make serves a purpose.",
+              "We design for attention, clarity, and lasting impact."
+            ]
+          }
+        },
+        {
+          "type": "deep_dive_modules",
+          "content": {
+            "modules": [
+              {
+                "id": "explainer-videos",
+                "title": "Explainer Videos",
+                "description": "Complex ideas made simple. Animated stories that educate, engage, and convert.",
+                "image": "src/assets/work/video-campaign.jpg",
+                "link": "/services/creative/explainer-videos",
+                "stats": ["85% completion rate", "2.5x engagement"]
+              },
+              {
+                "id": "motion-animation",
+                "title": "Motion & Animation",
+                "description": "Dynamic visuals that bring brands to life. From subtle UI animations to full cinematic sequences.",
+                "image": "src/assets/work/brand-project.jpg",
+                "link": "/services/creative/motion-animation"
+              },
+              {
+                "id": "brand-visual-systems",
+                "title": "Brand & Visual Systems",
+                "description": "Complete visual identities that scale. From logo to comprehensive design systems.",
+                "image": "src/assets/work/marketing-dashboard.jpg",
+                "link": "/services/creative/brand-visual-systems"
+              },
+              {
+                "id": "ui-ux-design",
+                "title": "UI/UX Design",
+                "description": "Interfaces that feel intuitive and look exceptional. User-centered design for web and mobile.",
+                "image": "src/assets/work/ai-platform.jpg",
+                "link": "/services/creative/ui-ux-design"
+              },
+              {
+                "id": "marketing-creatives",
+                "title": "Marketing Creatives",
+                "description": "Ad creatives, social content, and campaign assets designed for performance.",
+                "image": "src/assets/work/ecommerce-platform.jpg",
+                "link": "/services/creative/marketing-creatives"
+              },
+              {
+                "id": "short-form-content",
+                "title": "Short-Form Content",
+                "description": "Scroll-stopping content for TikTok, Reels, and Shorts. Built for the algorithm.",
+                "image": "src/assets/work/video-campaign.jpg",
+                "link": "/services/creative/short-form-content"
+              }
+            ]
+          }
+        },
+        {
+          "type": "visual_timeline",
+          "content": {
+            "headline": "How we bring ideas to life",
+            "steps": [
+              {"label": "Discovery", "description": "Understanding your goals, audience, and brand essence."},
+              {"label": "Strategy", "description": "Defining the creative direction and key messages."},
+              {"label": "Concept", "description": "Developing visual concepts and storyboards."},
+              {"label": "Production", "description": "Bringing the vision to life with precision."},
+              {"label": "Refinement", "description": "Iterating based on feedback until it's perfect."},
+              {"label": "Delivery", "description": "Final assets optimized for all platforms."}
+            ]
+          }
+        },
+        {
+          "type": "growth_bridge",
+          "content": {
+            "headline": "Creative that drives growth",
+            "description": "Our creative work doesn't exist in isolation. It connects directly to your marketing strategy, feeding campaigns with assets designed to convert.",
+            "links": [
+              {"text": "Digital Marketing & Growth", "url": "/services/marketing"},
+              {"text": "Software & AI Solutions", "url": "/services/software"}
+            ]
+          }
+        },
+        {
+          "type": "work_gallery",
+          "content": {
+            "items": [
+              {"caption": "Brand System for Tech Startup", "image": "src/assets/work/brand-project.jpg"},
+              {"caption": "Explainer Video Series", "image": "src/assets/work/video-campaign.jpg"},
+              {"caption": "SaaS Dashboard UI", "image": "src/assets/work/ai-platform.jpg"},
+              {"caption": "Motion Design Package", "image": "src/assets/work/marketing-dashboard.jpg"}
+            ]
+          }
+        },
+        {
+          "type": "related_capabilities",
+          "content": {
+            "services": [
+              {"title": "Marketing Engine", "description": "Amplify your creative with performance marketing.", "link": "/services/marketing"},
+              {"title": "Software & AI", "description": "Build the tools that power your business.", "link": "/services/software"},
+              {"title": "Managed Services", "description": "Ongoing support to keep everything running.", "link": "/services/managed"}
+            ]
+          }
+        },
+        {
+          "type": "closing",
+          "content": {
+            "headline": "Ready to build something that lasts?",
+            "subheadline": "We work with teams who value clarity, consistency, and thoughtful execution. If that sounds like you, let's talk.",
+            "cta": {"text": "Start a conversation", "link": "/contact"}
+          }
+        }
+      ]
+    },
+    "sub_pages": {
+      "explainer_videos": {
+        "title": "Explainer Videos - Creative Studio",
+        "url": "/services/creative/explainer-videos",
+        "hero": {
+          "headline": "Complex ideas, made simple.",
+          "subheadline": "Animated explainer videos that educate, engage, and convert."
+        },
+        "features": [
+          {"icon": "Video", "title": "Story-Driven Scripts", "description": "Every video starts with a compelling narrative that hooks viewers from the first second."},
+          {"icon": "Wand2", "title": "Custom Animation", "description": "Unique visual styles tailored to your brand—no templates, no shortcuts."},
+          {"icon": "Clock", "title": "Retention Optimized", "description": "Pacing and visual variety engineered to keep viewers watching until the end."},
+          {"icon": "Target", "title": "Conversion Focused", "description": "Every element designed to move viewers toward your desired action."}
+        ],
+        "case_study": {
+          "client": "TechFlow SaaS",
+          "challenge": "Complex product that confused prospects during demos.",
+          "solution": "2-minute animated explainer breaking down value proposition in three clear acts.",
+          "results": [
+            {"metric": "85%", "label": "Video completion rate"},
+            {"metric": "3.2x", "label": "Demo request increase"},
+            {"metric": "40%", "label": "Sales cycle reduction"}
+          ]
+        },
+        "process": [
+          {"step": 1, "title": "Script Development", "description": "Collaborative scripting to nail the message."},
+          {"step": 2, "title": "Storyboarding", "description": "Visual planning for every scene."},
+          {"step": 3, "title": "Style Frames", "description": "Defining the visual language."},
+          {"step": 4, "title": "Animation", "description": "Bringing the story to life."},
+          {"step": 5, "title": "Sound Design", "description": "Music and sound that enhance the experience."}
+        ]
+      },
+      "motion_animation": {
+        "title": "Motion & Animation - Creative Studio",
+        "url": "/services/creative/motion-animation",
+        "hero": {
+          "headline": "Movement that captivates.",
+          "subheadline": "From subtle micro-interactions to full cinematic sequences."
+        },
+        "features": [
+          {"icon": "Clapperboard", "title": "2D & 3D Animation", "description": "Full spectrum motion capabilities for any creative need."},
+          {"icon": "Type", "title": "Kinetic Typography", "description": "Text that moves with purpose and impact."},
+          {"icon": "Play", "title": "Video Integration", "description": "Seamless blend of live action and animation."},
+          {"icon": "Sparkles", "title": "UI Motion Design", "description": "Micro-interactions that delight and guide users."}
+        ],
+        "showreel": [
+          {"title": "Product Launch Animation", "image": "src/assets/work/brand-project.jpg"},
+          {"title": "Brand Motion Package", "image": "src/assets/work/video-campaign.jpg"},
+          {"title": "App Onboarding Flow", "image": "src/assets/work/ai-platform.jpg"}
+        ]
+      },
+      "brand_visual_systems": {
+        "title": "Brand & Visual Systems - Creative Studio",
+        "url": "/services/creative/brand-visual-systems",
+        "hero": {
+          "headline": "Brands that scale beautifully.",
+          "subheadline": "Complete visual identity systems built for growth."
+        },
+        "features": [
+          {"icon": "Compass", "title": "Brand Strategy", "description": "Positioning and messaging that sets you apart."},
+          {"icon": "Palette", "title": "Visual Identity", "description": "Logo, colors, typography—every visual element designed to work together."},
+          {"icon": "Layout", "title": "Design System", "description": "Scalable component libraries for consistent execution."},
+          {"icon": "BookOpen", "title": "Brand Guidelines", "description": "Comprehensive documentation for your team."}
+        ],
+        "brand_elements": [
+          {"title": "Logo System", "description": "Primary, secondary, and responsive logo variants."},
+          {"title": "Color Palette", "description": "Primary, secondary, and accent color systems."},
+          {"title": "Typography", "description": "Font pairings and usage guidelines."},
+          {"title": "Iconography", "description": "Custom icon sets that extend the brand."}
+        ]
+      },
+      "ui_ux_design": {
+        "title": "UI/UX Design - Creative Studio",
+        "url": "/services/creative/ui-ux-design",
+        "hero": {
+          "headline": "Interfaces that just work.",
+          "subheadline": "User-centered design for web, mobile, and SaaS applications."
+        },
+        "features": [
+          {"icon": "Search", "title": "UX Research", "description": "Understanding user needs through research and testing."},
+          {"icon": "PenTool", "title": "UI Design", "description": "Beautiful interfaces that feel intuitive."},
+          {"icon": "Layers", "title": "Design Systems", "description": "Scalable component libraries for consistent UI."},
+          {"icon": "Smartphone", "title": "Responsive Design", "description": "Seamless experiences across all devices."}
+        ]
+      },
+      "marketing_creatives": {
+        "title": "Marketing Creatives - Creative Studio",
+        "url": "/services/creative/marketing-creatives",
+        "hero": {
+          "headline": "Creatives that perform.",
+          "subheadline": "Ad creatives, social content, and campaign assets designed for conversion."
+        },
+        "features": [
+          {"icon": "Image", "title": "Static Creatives", "description": "High-impact images for ads and social."},
+          {"icon": "Video", "title": "Video Ads", "description": "Short-form video ads that stop the scroll."},
+          {"icon": "Layout", "title": "Landing Page Design", "description": "Conversion-optimized page designs."},
+          {"icon": "RefreshCw", "title": "Creative Testing", "description": "Multiple variants for A/B testing."}
+        ],
+        "asset_types": [
+          {"title": "Social Media Ads", "count": "50+ formats", "image": "src/assets/work/marketing-dashboard.jpg"},
+          {"title": "Email Templates", "count": "Responsive HTML", "image": "src/assets/work/ecommerce-platform.jpg"},
+          {"title": "Banner Ads", "count": "All sizes", "image": "src/assets/work/brand-project.jpg"}
+        ]
+      },
+      "short_form_content": {
+        "title": "Short-Form Content - Creative Studio",
+        "url": "/services/creative/short-form-content",
+        "hero": {
+          "headline": "Built for the scroll.",
+          "subheadline": "TikTok, Reels, and Shorts content that captures attention in under 3 seconds."
+        },
+        "features": [
+          {"icon": "Smartphone", "title": "Platform-Native", "description": "Content designed for each platform's unique algorithm."},
+          {"icon": "TrendingUp", "title": "Trend-Aware", "description": "Capitalizing on trends while staying on-brand."},
+          {"icon": "Zap", "title": "Quick Turnaround", "description": "Fast production to stay relevant."},
+          {"icon": "BarChart", "title": "Performance Tracking", "description": "Analytics to optimize what works."}
+        ],
+        "content_types": [
+          {"title": "Hook Videos", "description": "Scroll-stopping first 3 seconds."},
+          {"title": "Product Demos", "description": "Quick showcases that sell."},
+          {"title": "Behind the Scenes", "description": "Authentic brand content."},
+          {"title": "Trend Participation", "description": "On-brand trend content."}
+        ]
+      }
+    }
+  }
+}
