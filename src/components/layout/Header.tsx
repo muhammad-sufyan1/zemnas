@@ -69,6 +69,8 @@ export function Header() {
             <motion.img 
               src="/assets/zemnas-logo-transparent.png" 
               alt="Zemnas" 
+              loading="eager"
+              decoding="async"
               className="h-9 lg:h-11 w-auto transition-transform duration-300 group-hover:scale-105 dark:brightness-0 dark:invert"
               whileHover={{ rotate: [-1, 1, -1, 0] }}
               transition={{ duration: 0.5 }}
