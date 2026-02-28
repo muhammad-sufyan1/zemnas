@@ -487,11 +487,3 @@
 img {
   @apply transition-opacity duration-500;
 }
-
-img[loading] {
-  @apply opacity-0;
-}
-
-img.loaded {
-  @apply opacity-100;
-}
