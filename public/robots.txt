@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://zemnas.com/sitemap.xml
+Sitemap: https://www.zemnas.com/sitemap.xml
