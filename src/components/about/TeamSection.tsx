@@ -34,7 +34,7 @@ const team: TeamMember[] = [
     image: null,
   },
   {
-    name: "Muhammad Ehtasham",
+    name: "Ehtasham Ul Haq",
     role: "Lead Editor",
     image: null,
   },
