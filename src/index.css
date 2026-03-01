@@ -166,12 +166,12 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
   }
 
   /* Typography hierarchy */
   h1, h2, h3, .font-display {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Poppins', system-ui, sans-serif;
   }
 
   h1 {
