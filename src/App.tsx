@@ -12,20 +12,10 @@ const Index = lazy(() => import("./pages/Index"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const CreativeService = lazy(() => import("./pages/services/CreativeService"));
 const MarketingService = lazy(() => import("./pages/services/MarketingService"));
-const SoftwareService = lazy(() => import("./pages/services/SoftwareService"));
-const ManagedService = lazy(() => import("./pages/services/ManagedService"));
 const DemandGeneration = lazy(() => import("./pages/services/marketing/DemandGeneration"));
 const FunnelsLandingPages = lazy(() => import("./pages/services/marketing/FunnelsLandingPages"));
 const WebsiteInfrastructure = lazy(() => import("./pages/services/marketing/WebsiteInfrastructure"));
 const PerformanceOptimization = lazy(() => import("./pages/services/marketing/PerformanceOptimization"));
-const CustomDevelopment = lazy(() => import("./pages/services/software/CustomDevelopment"));
-const AIPoweredTools = lazy(() => import("./pages/services/software/AIPoweredTools"));
-const WorkflowAutomation = lazy(() => import("./pages/services/software/WorkflowAutomation"));
-const IntegrationAPIs = lazy(() => import("./pages/services/software/IntegrationAPIs"));
-const MarketingCreativeOps = lazy(() => import("./pages/services/managed/MarketingCreativeOps"));
-const WebsiteMaintenance = lazy(() => import("./pages/services/managed/WebsiteMaintenance"));
-const TechnicalSupport = lazy(() => import("./pages/services/managed/TechnicalSupport"));
-const OngoingOptimization = lazy(() => import("./pages/services/managed/OngoingOptimization"));
 const ExplainerVideos = lazy(() => import("./pages/services/creative/ExplainerVideos"));
 const MotionAnimation = lazy(() => import("./pages/services/creative/MotionAnimation"));
 const ShortFormContent = lazy(() => import("./pages/services/creative/ShortFormContent"));
@@ -100,16 +90,6 @@ function AnimatedRoutes() {
             <Route path="/services/marketing/funnels-landing-pages" element={<FunnelsLandingPages />} />
             <Route path="/services/marketing/website-infrastructure" element={<WebsiteInfrastructure />} />
             <Route path="/services/marketing/performance-optimization" element={<PerformanceOptimization />} />
-            <Route path="/services/software" element={<SoftwareService />} />
-            <Route path="/services/software/custom-development" element={<CustomDevelopment />} />
-            <Route path="/services/software/ai-powered-tools" element={<AIPoweredTools />} />
-            <Route path="/services/software/workflow-automation" element={<WorkflowAutomation />} />
-            <Route path="/services/software/integration-apis" element={<IntegrationAPIs />} />
-            <Route path="/services/managed" element={<ManagedService />} />
-            <Route path="/services/managed/marketing-creative-ops" element={<MarketingCreativeOps />} />
-            <Route path="/services/managed/website-maintenance" element={<WebsiteMaintenance />} />
-            <Route path="/services/managed/technical-support" element={<TechnicalSupport />} />
-            <Route path="/services/managed/ongoing-optimization" element={<OngoingOptimization />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/work" element={<Work />} />

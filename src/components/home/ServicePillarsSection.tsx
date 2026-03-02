@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Palette, TrendingUp, Code2, Settings, ArrowRight, ArrowUpRight } from "lucide-react";
+import { Palette, TrendingUp, ArrowRight, ArrowUpRight } from "lucide-react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -25,28 +25,6 @@ const services = [
     capabilities: ["Demand Gen", "Funnels", "SEO/SEM", "Analytics"],
     gradient: "from-emerald-500/20 via-green-500/10 to-transparent",
     accentColor: "emerald",
-  },
-  {
-    icon: Code2,
-    title: "Software & AI",
-    subtitle: "Build & Automate",
-    description:
-      "Custom software, AI integration, workflow automation, and intelligent systems designed for your specific needs.",
-    href: "/services/software",
-    capabilities: ["Custom Apps", "AI Tools", "Automation", "APIs"],
-    gradient: "from-blue-500/20 via-cyan-500/10 to-transparent",
-    accentColor: "blue",
-  },
-  {
-    icon: Settings,
-    title: "Managed Services",
-    subtitle: "Support & Scale",
-    description:
-      "Ongoing digital support, maintenance, and optimization to keep your systems running at peak performance.",
-    href: "/services/managed",
-    capabilities: ["24/7 Support", "Updates", "Monitoring", "Optimization"],
-    gradient: "from-amber-500/20 via-orange-500/10 to-transparent",
-    accentColor: "amber",
   },
 ];
 
@@ -101,11 +79,11 @@ export function ServicePillarsSection() {
             Our Capabilities
           </motion.span>
           <h2 className="font-display text-foreground">
-            Four pillars of <span className="gradient-text">growth</span>
+            Two pillars of <span className="gradient-text">growth</span>
           </h2>
           <p className="mt-6 text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
-            An integrated approach where creative, marketing, software, and 
-            operations work together—not in silos.
+            An integrated approach where creative and marketing work together to
+            build momentum and measurable results.
           </p>
         </motion.div>
 

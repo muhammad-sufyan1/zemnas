@@ -121,8 +121,8 @@ export function HeroSection() {
               transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
               className="mt-8 text-lg md:text-xl text-text-secondary leading-relaxed max-w-xl"
             >
-              Creative. Marketing. Software. AI. Four disciplines, one integrated 
-              approach—transforming how businesses connect, convert, and scale.
+              Creative and marketing in one integrated approach, transforming how
+              businesses connect, convert, and scale.
             </motion.p>
 
             {/* CTAs */}

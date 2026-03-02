@@ -7,8 +7,6 @@ const footerLinks = {
   services: [
     { name: "Creative Studio", href: "/services/creative" },
     { name: "Marketing Engine", href: "/services/marketing" },
-    { name: "Software & AI", href: "/services/software" },
-    { name: "Managed Services", href: "/services/managed" },
   ],
   company: [
     { name: "About Us", href: "/about" },
@@ -37,8 +35,8 @@ export function Footer() {
               />
             </Link>
             <p className="mt-6 text-background/70 leading-relaxed max-w-sm">
-              Your digital partner for creative, marketing, software, and AI solutions 
-              that drive measurable growth.
+              Your digital partner for creative and marketing systems that drive
+              measurable growth.
             </p>
 
             {/* Contact & Social */}

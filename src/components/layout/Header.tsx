@@ -16,16 +16,6 @@ const services = [
     description: "B2B marketing, funnels, lead generation",
     href: "/services/marketing",
   },
-  {
-    name: "Software & AI Solutions",
-    description: "Custom software, AI development, automation",
-    href: "/services/software",
-  },
-  {
-    name: "Managed Services",
-    description: "Ongoing digital and technology support",
-    href: "/services/managed",
-  },
 ];
 
 const navItems = [

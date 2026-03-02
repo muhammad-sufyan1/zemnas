@@ -9,9 +9,9 @@ const currentProjects = [
     href: "/services/creative",
   },
   {
-    label: "AI workflow automation for internal ops",
+    label: "Demand-gen funnel revamp for B2B SaaS",
     gradient: "from-violet-500/30 via-violet-500/10 to-transparent",
-    href: "/services/software",
+    href: "/services/marketing",
   },
   {
     label: "Product UI redesign for scale readiness",
@@ -29,9 +29,9 @@ const currentProjects = [
     href: "/services/creative",
   },
   {
-    label: "Analytics dashboard for data-driven teams",
+    label: "Landing page conversion sprint for growth teams",
     gradient: "from-rose-500/30 via-rose-500/10 to-transparent",
-    href: "/services/software",
+    href: "/services/marketing",
   },
 ];
 
@@ -49,7 +49,7 @@ export function LiveCapabilityStrip() {
           What we're building right now
         </h2>
         <p className="mt-2 text-muted-foreground max-w-lg">
-          Current projects in motion across creative, marketing, and technology.
+          Current projects in motion across creative and marketing.
         </p>
       </div>
 

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, TrendingUp, Code, Settings } from "lucide-react";
+import { ArrowRight, TrendingUp, MessageSquare } from "lucide-react";
 import { useStaggeredAnimation } from "@/hooks/useScrollAnimation";
 
 const capabilities = [
@@ -12,17 +12,10 @@ const capabilities = [
   },
   {
     id: 2,
-    title: "Software & AI Solutions",
-    description: "Custom applications and intelligent systems that bring your vision to life.",
-    href: "/services/software",
-    icon: Code,
-  },
-  {
-    id: 3,
-    title: "Managed Services",
-    description: "Ongoing partnership for continuous creative support and strategic execution.",
-    href: "/services/managed",
-    icon: Settings,
+    title: "Start a Conversation",
+    description: "Share your goals and we’ll map the right creative and growth plan.",
+    href: "/contact",
+    icon: MessageSquare,
   },
 ];
 
@@ -51,7 +44,7 @@ export function RelatedCapabilities() {
         {/* Cards grid */}
         <div 
           ref={ref}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
           {capabilities.map((cap, index) => {
             const Icon = cap.icon;

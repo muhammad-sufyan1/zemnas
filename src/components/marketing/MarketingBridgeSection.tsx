@@ -1,6 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Link } from "react-router-dom";
-import { ArrowRight, Palette, Code } from "lucide-react";
+import { ArrowRight, Palette, MessageSquare } from "lucide-react";
 
 export const MarketingBridgeSection = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.3 });
@@ -34,11 +34,11 @@ export const MarketingBridgeSection = () => {
                 <ArrowRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
               </Link>
               <Link
-                to="/services/software"
+                to="/contact"
                 className="flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors group"
               >
-                <Code className="w-5 h-5" />
-                <span>Software & AI Solutions</span>
+                <MessageSquare className="w-5 h-5" />
+                <span>Talk to Zemnas</span>
                 <ArrowRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
               </Link>
             </div>

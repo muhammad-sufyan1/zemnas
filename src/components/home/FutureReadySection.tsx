@@ -211,8 +211,8 @@ export function FutureReadySection() {
               variant="outline" 
               className="text-base h-14 px-8 border-primary/30 hover:bg-primary/10 hover:border-primary/50 group glass"
             >
-              <Link to="/services/software">
-                Explore AI & Software
+              <Link to="/contact">
+                Discuss AI & Automation
                 <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
